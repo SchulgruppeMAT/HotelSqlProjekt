@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-image: url(../pictures/background/background-pic.jpg); }
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  color: white;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: #1C4B7F; }
+
+header {
+  font-family: 'Kodchasan', sans-serif;
+  color: #64CDFF;
+  padding: 10px; }
+  header h1 {
+    font-size: 24px;
+    font-family: 'Merriweather', serif; }
+  header h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 52px; }
+
+.header-nav {
+  margin: 0;
+  padding: 0;
+  color: white; }
+  .header-nav ul {
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin: 1%;
+    display: inline-block;
+    list-style-type: none; }
+  .header-nav li {
+    display: inline-block;
+    background-color: #425F7F;
+    padding: 5px;
+    transition-property: background-color, color;
+    transition-duration: 0.5s; }
+    .header-nav li:hover {
+      background-color: #84BFFF; }
+      .header-nav li:hover a {
+        color: #1C4B7F; }
+  .header-nav a {
+    font-family: 'Kodchasan', sans-serif;
+    color: #64CDFF;
+    text-decoration: none; }
+    .header-nav a h1 {
+      font-size: 24px;
+      font-family: 'Merriweather', serif; }
+
+nav {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #425F7F;
+  text-align: center;
+  margin-top: -5%; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin: 1%;
+    display: inline-block;
+    list-style-type: none; }
+  nav li {
+    display: inline-block;
+    background-color: #425F7F;
+    padding: 5px;
+    transition-property: background-color, color;
+    transition-duration: 0.5s; }
+    nav li:hover {
+      background-color: #84BFFF; }
+      nav li:hover a {
+        color: #1C4B7F; }
+  nav a {
+    font-family: 'Kodchasan', sans-serif;
+    color: #64CDFF;
+    text-decoration: none; }
+    nav a h1 {
+      font-size: 24px;
+      font-family: 'Merriweather', serif; }
+
+section {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Kodchasan', sans-serif;
+  color: #64CDFF;
+  padding: 10px;
+  margin: 5%;
+  width: 85%;
+  height: 300px;
+  background-color: #2C79CC; }
+  section h1 {
+    font-size: 24px;
+    font-family: 'Merriweather', serif; }
+  section img {
+    float: left; }
+  section .buchen {
+    float: right; }
+
+/*# sourceMappingURL=main.css.map */

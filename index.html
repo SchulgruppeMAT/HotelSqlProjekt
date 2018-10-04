@@ -5,7 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tropical Garda Hotel</title>
+
+    <!--main stylesheet-->
+    <link rel="stylesheet" type="text/css" href="stylesheet-scss/main.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+    <!--bxslider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 
 <body>
@@ -15,6 +25,7 @@
             <div class="header-title">
                 <h1>Tropical Garda Hotel</h1>
             </div>
+
             <div class="header-nav">
                 <ul>
                     <li><a href="#">Log in</a></li>
@@ -22,6 +33,13 @@
                 </ul>
             </div>
         </header>
+
+        <div class="slider" style="margin: 0;">
+            <div><img src="pictures/slider/slider-pic-harbour.jpg"></div>
+            <div><img src="pictures/slider/slider-pic-mountain.jpg"></div>
+            <div><img src="pictures/slider/slider-pic-see.jpg"></div>
+            <div><img src="pictures/slider/slider-pic-Villa.jpg"></div>
+        </div>
 
         <nav>
             <ul>
@@ -36,9 +54,11 @@
 
             <!--Penthouse-->
             <section>
-                <img width="250px" height="250px">
 
                 <div class="booking-text">
+                    <img src="pictures/rooms/penthouse/thumbnail.jpg" width="350px" height="250px">
+
+
                     <h1>Penthouse</h1>
                     <p class="booking-descripton">lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem
                         Ipsum lorem Ipsum lorem Ipsum lorem Ipsum</p>
@@ -125,6 +145,27 @@
             <!--Kommt später erst...-->
         </footer>
     </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $(document).ready(function (e) {
+                $('.slider').bxSlider({
+                    slideWidth: 1600,
+                    slideHeight: 200,
+                    minSlides: 1,
+                    slideMargin: 0,
+                    controls: false,
+                    auto: true,
+                    pause: 3500,
+                    pager: false
+                });
+            });
+
+        });
+
+
+    </script>
 </body>
 
 </html>
