@@ -28,26 +28,33 @@
 
             <div class="header-nav">
                 <ul>
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#" class="openLogin">Log in</a></li>
+                    <li><a href="#" class="openSignup">Sign up</a></li>
                 </ul>
             </div>
         </header>
 
         <div class="is-hidden login-Moodle"> 
+            <button class="close-button close-pos">X</button>
             <h1>Log In</h1>
 
-            <label>Benutzername<br><input type="text"></label><br>
-            <label>Passwort<br><input type="password"></label><br>
+            <p>
+                <label>Benutzername<br><input type="text"></label><br>
+                <label>Passwort<br><input type="password"></label><br>
 
-            <button>Einloggen</button>
+                <button class="std-button login-pos">Einloggen</button>
+            </p>
+            <p class="pw-forgot">
+                <a href="#">Passwort vergessen?</a>
+            </p>
+            <p>
+                Sie haben noch keinen Account. Dann Regestrieren Sie sich jetzt.
+                <button class="std-button switch-pos">Sign up</button>
+            </p>
 
-            <a href="#">Passwort vergessen?</a>
-
-            <button>Sign up</button>
         </div>
 
-        <div class="is-hidden sigUp-Moodle"> 
+        <div class="is-hidden signUp-Moodle"> 
             <h1>Sign up</h1>
 
             <label>Name<br><input type="text"></label><br>

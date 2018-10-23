@@ -109,4 +109,66 @@ section {
   section .buchen {
     float: right; }
 
+.login-Moodle {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Kodchasan', sans-serif;
+  color: #64CDFF;
+  position: fixed;
+  top: 150px;
+  left: 200px;
+  z-index: 1;
+  height: 400px;
+  width: 300px;
+  background-color: #2C79CC;
+  color: white; }
+  .login-Moodle h1 {
+    font-size: 24px;
+    font-family: 'Merriweather', serif; }
+  .login-Moodle h1 {
+    text-align: center;
+    margin-right: 0; }
+  .login-Moodle p {
+    margin-left: 20%; }
+  .login-Moodle .pw-forgot a {
+    color: #0000ee;
+    text-decoration: none;
+    transition-property: color, text-decoration;
+    transition-duration: 0.2s; }
+    .login-Moodle .pw-forgot a:hover {
+      color: white;
+      text-decoration: underline; }
+
+.login-pos {
+  margin-top: 5%; }
+
+.std-button {
+  background-color: #425F7F;
+  color: white;
+  border: 2px solid white;
+  padding: 5px;
+  transition-property: color, background-color, border;
+  transition-duration: 0.5s; }
+  .std-button:hover {
+    background-color: white;
+    color: #425F7F;
+    border: 2px solid #425F7F; }
+
+.close-button {
+  margin: -3%;
+  height: 30px;
+  width: 30px;
+  font-size: 18px;
+  color: red;
+  background-color: #425F7F;
+  float: right;
+  border: 2px solid #425F7F;
+  border-radius: 50%;
+  transition-property: color, background-color, border;
+  transition-duration: 0.5s; }
+  .close-button:hover {
+    background-color: white;
+    border: 2px solid #425F7F; }
+
 /*# sourceMappingURL=main.css.map */

@@ -15,6 +15,33 @@ $(document).ready(function () {
     });
     
     //offerLayer
-    $body.find()
+    
+
+    //Login Sign up Moodle
+    $body.find('div .openLogin').each(function() {
+        let $popup = $(this);
+        $popup.on('click', function() {
+
+            $body.find('.login-Moodle').removeClass('is-hidden');
+            //loginPopup.unfold($popup);
+        });
+    });
+
+    $body.find('div .openSignup').each(function() {
+        let $popup = $(this);
+        $popup.on('click', function() {
+
+            $body.find('.signUp-Moodle').removeClass('is-hidden');
+            //loginPopup.unfold($popup);
+        });
+    });
+
+    //global Closing Button
+    $body.find('div .close-button').each(function(){
+        let $closeBtn = $(this);
+        $closeBtn.on('click', function(){
+            $closeBtn.parent().addClass('is-hidden');
+        });
+    })
 
 });
