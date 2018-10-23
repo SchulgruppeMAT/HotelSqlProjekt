@@ -5,6 +5,10 @@ body{
     background-image: url(../pictures/background/background-pic.jpg);
 }
 
+.is-hidden{
+    display: none;
+}
+
 .wrapper{
     @include reset();
 
@@ -118,3 +122,106 @@ section{
     }
 }
 
+.login-Moodle{
+    @include reset();
+    @include formatting();
+
+    position: fixed;
+    top: 150px;
+    left:200px;
+    z-index: 1;
+    height: 400px;
+    width: 300px;
+
+    background-color: #2C79CC;
+    color: white;
+    
+    h1{
+        text-align: center;
+        margin-right: 0;
+    }
+
+    p{
+        margin-left: 20%;
+    }
+
+    .pw-forgot{
+        a{
+            color: rgb(0, 0, 238);
+            text-decoration: none;
+            transition-property: color, text-decoration;
+            transition-duration: 0.2s;
+
+            &:hover{
+                color: white;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.login-pos{
+    margin-top: 5%;
+}
+
+.std-button{
+    background-color: #425F7F;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+
+    transition-property: color, background-color, border;
+    transition-duration: 0.5s;
+
+    &:hover{
+        background-color: white;
+        color: #425F7F;
+        border: 2px solid #425F7F;
+    }
+}
+
+.close-button{
+    margin: -3%;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+
+    color: red;
+    background-color: #425F7F;
+    float: right;
+    border: 2px solid #425F7F;
+    border-radius: 50%;
+    transition-property: color, background-color, border;
+    transition-duration: 0.5s;
+
+    &:hover{
+        background-color: white;
+        border: 2px solid #425F7F;
+    }
+}
+
+.signUp-Moodle{
+    @include reset();
+    @include formatting();
+
+    position: fixed;
+    top: 150px;
+    left:200px;
+    z-index: 1;
+    height: 400px;
+    width: 300px;
+
+    background-color: #2C79CC;
+    color: white;
+    
+    h1{
+        text-align: center;
+        margin: 2%;
+        
+    }
+
+    p{
+        margin: 0;
+        margin-left: 20%;
+    }
+}

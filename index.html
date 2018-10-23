@@ -28,11 +28,51 @@
 
             <div class="header-nav">
                 <ul>
-                    <li><a href="#">Log in</a></li>
-                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#" class="openLogin">Log in</a></li>
+                    <li><a href="#" class="openSignup">Sign up</a></li>
                 </ul>
             </div>
         </header>
+
+        <div class="is-hidden login-Moodle"> 
+            <button class="close-button close-pos">X</button>
+            <h1>Log In</h1>
+
+            <p>
+                <label>Benutzername<br><input type="text"></label><br>
+                <label>Passwort<br><input type="password"></label><br>
+
+                <button class="std-button login-pos">Einloggen</button>
+            </p>
+            <p class="pw-forgot">
+                <a href="#">Passwort vergessen?</a>
+            </p>
+            <p>
+                Sie haben noch keinen Account. Dann Regestrieren Sie sich jetzt.
+                <button class="std-button switch-pos">Sign up</button>
+            </p>
+
+        </div>
+
+        <div class="is-hidden signUp-Moodle">
+            <button class="close-button close-pos">X</button> 
+            <h1>Sign up</h1>
+            <p>
+                <label>Vollername<br><input type="text"></label><br>
+                <label>Benutzername<br><input type="text"></label><br>
+                <label>e-mail<br><input type="email"></label><br>
+
+                <label>Passwort<br><input type="password"></label><br>
+                <label>Passwort<br><input type="password"></label><br>
+                <br>
+                <button class="std-button">Registrieren</button><br>
+                <br>
+        </p>
+        <p>
+            Sie haben bereits einen Account. Dann Loggen Sie sich jetzt ein.
+            <button class="std-button">Log in</button>
+        </p>
+        </div>
 
         <div class="slider" style="margin: 0;">
             <div><img src="pictures/slider/slider-pic-harbour.jpg"></div>
@@ -146,26 +186,8 @@
         </footer>
     </div>
 
+    <script src="script-javascript/App.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $(document).ready(function (e) {
-                $('.slider').bxSlider({
-                    slideWidth: 1600,
-                    slideHeight: 200,
-                    minSlides: 1,
-                    slideMargin: 0,
-                    controls: false,
-                    auto: true,
-                    pause: 3500,
-                    pager: false
-                });
-            });
-
-        });
-
-
-    </script>
 </body>
 
 </html>
