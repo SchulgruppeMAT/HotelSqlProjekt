@@ -199,3 +199,29 @@ section{
         border: 2px solid #425F7F;
     }
 }
+
+.signUp-Moodle{
+    @include reset();
+    @include formatting();
+
+    position: fixed;
+    top: 150px;
+    left:200px;
+    z-index: 1;
+    height: 400px;
+    width: 300px;
+
+    background-color: #2C79CC;
+    color: white;
+    
+    h1{
+        text-align: center;
+        margin: 2%;
+        
+    }
+
+    p{
+        margin: 0;
+        margin-left: 20%;
+    }
+}

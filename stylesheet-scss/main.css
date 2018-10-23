@@ -171,4 +171,28 @@ section {
     background-color: white;
     border: 2px solid #425F7F; }
 
+.signUp-Moodle {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Kodchasan', sans-serif;
+  color: #64CDFF;
+  position: fixed;
+  top: 150px;
+  left: 200px;
+  z-index: 1;
+  height: 400px;
+  width: 300px;
+  background-color: #2C79CC;
+  color: white; }
+  .signUp-Moodle h1 {
+    font-size: 24px;
+    font-family: 'Merriweather', serif; }
+  .signUp-Moodle h1 {
+    text-align: center;
+    margin: 2%; }
+  .signUp-Moodle p {
+    margin: 0;
+    margin-left: 20%; }
+
 /*# sourceMappingURL=main.css.map */

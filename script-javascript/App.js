@@ -27,6 +27,7 @@ $(document).ready(function () {
         });
     });
 
+    //Sign Up Moodle
     $body.find('div .openSignup').each(function() {
         let $popup = $(this);
         $popup.on('click', function() {
