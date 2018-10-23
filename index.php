@@ -35,43 +35,52 @@
         </header>
 
         <div class="is-hidden login-Moodle"> 
-            <button class="close-button close-pos">X</button>
-            <h1>Log In</h1>
+            <form method="post">
+                <button class="close-button close-pos">X</button>
+                <h1>Log In</h1>
 
-            <p>
-                <label>Benutzername<br><input type="text"></label><br>
-                <label>Passwort<br><input type="password"></label><br>
+                <p>
+                    <label>Benutzername<br><input type="text" name="txt_userInput"></label><br>
+                    <label>Passwort<br><input type="password" name="txt_pw"></label><br>
 
-                <button class="std-button login-pos">Einloggen</button>
-            </p>
-            <p class="pw-forgot">
-                <a href="#">Passwort vergessen?</a>
-            </p>
-            <p>
-                Sie haben noch keinen Account. Dann Regestrieren Sie sich jetzt.
-                <button class="std-button switch-pos">Sign up</button>
-            </p>
-
+                    <button class="std-button login-pos" name="btc_login">Einloggen</button>
+                </p>
+                <p class="pw-forgot">
+                    <a href="#">Passwort vergessen?</a>
+                </p>
+                <p>
+                    Sie haben noch keinen Account. Dann Registrieren Sie sich jetzt.
+                    <button class="std-button switch-pos" name="btc_pwForget">Sign up</button>
+                </p>
+            </form>     
+            <?php
+                include("script-php/login_script.php");
+            ?>
         </div>
 
         <div class="is-hidden signUp-Moodle">
-            <button class="close-button close-pos">X</button> 
-            <h1>Sign up</h1>
-            <p>
-                <label>Vollername<br><input type="text"></label><br>
-                <label>Benutzername<br><input type="text"></label><br>
-                <label>e-mail<br><input type="email"></label><br>
+            <form method="post">
+                <button class="close-button close-pos">X</button> 
+                <h1>Sign up</h1>
+                <p>
+                    <label>Voller Name<br><input type="text" name="txt_fullname"></label><br>
+                    <label>Benutzername<br><input type="text" name="txt_username"></label><br>
+                    <label>e-mail<br><input type="email" name="txt_email"></label><br>
 
-                <label>Passwort<br><input type="password"></label><br>
-                <label>Passwort<br><input type="password"></label><br>
-                <br>
-                <button class="std-button">Registrieren</button><br>
-                <br>
-        </p>
-        <p>
-            Sie haben bereits einen Account. Dann Loggen Sie sich jetzt ein.
-            <button class="std-button">Log in</button>
-        </p>
+                    <label>Passwort<br><input type="password" name="txt_pw"></label><br>
+                    <label>Passwort(Bestätigung)<br><input type="password" name="txt_pwC"></label><br>
+                    <br>
+                        <button class="std-button" name="btc_register">Registrieren</button><br>
+                    <br>
+                </p>
+                <p>
+                    Sie haben bereits einen Account. Dann Loggen Sie sich jetzt ein.
+                    <button class="std-button" name="btc_refLogin">Log in</button>
+                </p>
+            </form>
+            <?php
+                include("script-php/register_script.php");
+            ?>
         </div>
 
         <div class="slider" style="margin: 0;">
