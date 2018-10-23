@@ -4,6 +4,9 @@ body {
   color: white;
   background-image: url(../pictures/background/background-pic.jpg); }
 
+.is-hidden {
+  display: none; }
+
 .wrapper {
   margin: 0;
   padding: 0;

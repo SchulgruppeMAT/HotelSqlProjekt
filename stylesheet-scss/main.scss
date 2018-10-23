@@ -5,6 +5,10 @@ body{
     background-image: url(../pictures/background/background-pic.jpg);
 }
 
+.is-hidden{
+    display: none;
+}
+
 .wrapper{
     @include reset();
 
