@@ -10,7 +10,7 @@
         $inp_username = trim($_POST['//Inputfield(username)']);
         $inp_password = trim($_POST['//Inputfield(passwd)']);
         // Select the pw for the username
-        $stmt = $con->prepare("SELECT passwort FROM logindata WHERE logindata.username = :txt_user LIMIT 1");
+        $stmt = $connection->prepare("SELECT passwort FROM logindata WHERE logindata.username = :txt_user LIMIT 1");
         $stmt->bindParam(':txt_user', $inp_username);
         $stmt->execute();
 
