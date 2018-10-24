@@ -23,6 +23,7 @@ $(document).ready(function () {
         $popup.on('click', function() {
 
             $body.find('.login-Moodle').removeClass('is-hidden');
+            $body.find('.overlay').removeClass('is-hidden');
             //loginPopup.unfold($popup);
         });
     });
@@ -33,7 +34,24 @@ $(document).ready(function () {
         $popup.on('click', function() {
 
             $body.find('.signUp-Moodle').removeClass('is-hidden');
+            $body.find('.overlay').removeClass('is-hidden');
             //loginPopup.unfold($popup);
+        });
+    });
+
+    //Login to SignUp
+    $body.find('.toSignUp').each(function() {
+        $(this).on('click', function() {
+            $body.find('.login-Moodle').addClass('is-hidden');
+            $body.find('.signUp-Moodle').removeClass('is-hidden');
+        });        
+    });
+
+    //SignUp to Login
+    $body.find('.toLogIn').each(function() {
+        $(this).on('click', function() {
+            $body.find('.signUp-Moodle').addClass('is-hidden');
+            $body.find('.login-Moodle').removeClass('is-hidden');
         });
     });
 
@@ -42,6 +60,7 @@ $(document).ready(function () {
         let $closeBtn = $(this);
         $closeBtn.on('click', function(){
             $closeBtn.parent().addClass('is-hidden');
+            $body.find('.overlay').addClass('is-hidden');
         });
     })
 
