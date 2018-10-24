@@ -174,10 +174,10 @@ section {
 
 .close-button {
   margin: -3%;
-  height: 30px;
-  width: 30px;
-  font-size: 18px;
-  color: red;
+  height: 24px;
+  width: 27px;
+  font-size: 17px;
+  color: white;
   background-color: #425F7F;
   float: right;
   border: 2px solid #425F7F;
@@ -186,7 +186,8 @@ section {
   transition-duration: 0.5s; }
   .close-button:hover {
     background-color: white;
-    border: 2px solid #425F7F; }
+    border: 2px solid #425F7F;
+    color: #425F7F; }
 
 .signUp-Moodle {
   margin: 0;
