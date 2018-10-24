@@ -5,6 +5,10 @@ body{
     background-image: url(../pictures/background/background-pic.jpg);
 }
 
+.my-body-noscroll-class {
+    overflow: hidden;
+}
+
 .is-hidden{
     display: none;
 }

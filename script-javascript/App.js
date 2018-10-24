@@ -23,6 +23,7 @@ $(document).ready(function () {
         $popup.on('click', function() {
             $body.find('.login-Moodle').removeClass('is-hidden');
             $body.find('.overlay').removeClass('is-hidden');
+            $body.css('overflow', 'hidden');
             //loginPopup.unfold($popup);
         });
     });
@@ -34,6 +35,7 @@ $(document).ready(function () {
 
             $body.find('.signUp-Moodle').removeClass('is-hidden');
             $body.find('.overlay').removeClass('is-hidden');
+            $body.css('overflow', 'hidden');
             //loginPopup.unfold($popup);
         });
     });
@@ -60,6 +62,7 @@ $(document).ready(function () {
         $closeBtn.on('click', function(){
             $closeBtn.parent().addClass('is-hidden');
             $body.find('.overlay').addClass('is-hidden');
+            $body.css('overflow', 'visible');
         });
     })
 
