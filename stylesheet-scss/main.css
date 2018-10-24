@@ -4,6 +4,9 @@ body {
   color: white;
   background-image: url(../pictures/background/background-pic.jpg); }
 
+.my-body-noscroll-class {
+  overflow: hidden; }
+
 .is-hidden {
   display: none; }
 
@@ -15,6 +18,19 @@ body {
   margin-left: 15%;
   margin-right: 15%;
   background-color: #1C4B7F; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: 1;
+  background-color: #000; }
+
+.higher-index {
+  z-index: 3; }
 
 header {
   font-family: 'Kodchasan', sans-serif;
@@ -116,9 +132,10 @@ section {
   font-family: 'Kodchasan', sans-serif;
   color: #64CDFF;
   position: fixed;
-  top: 150px;
-  left: 200px;
-  z-index: 1;
+  top: 30%;
+  left: 40%;
+  right: 40%;
+  z-index: 2;
   height: 400px;
   width: 300px;
   background-color: #2C79CC;
@@ -178,9 +195,10 @@ section {
   font-family: 'Kodchasan', sans-serif;
   color: #64CDFF;
   position: fixed;
-  top: 150px;
-  left: 200px;
-  z-index: 1;
+  top: 30%;
+  left: 40%;
+  right: 40%;
+  z-index: 2;
   height: 400px;
   width: 300px;
   background-color: #2C79CC;
