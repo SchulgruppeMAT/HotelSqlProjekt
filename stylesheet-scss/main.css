@@ -129,8 +129,9 @@ section {
   font-family: 'Kodchasan', sans-serif;
   color: #64CDFF;
   position: fixed;
-  top: 150px;
-  left: 200px;
+  top: 30%;
+  left: 40%;
+  right: 40%;
   z-index: 2;
   height: 400px;
   width: 300px;
@@ -191,8 +192,9 @@ section {
   font-family: 'Kodchasan', sans-serif;
   color: #64CDFF;
   position: fixed;
-  top: 150px;
-  left: 200px;
+  top: 30%;
+  left: 40%;
+  right: 40%;
   z-index: 2;
   height: 400px;
   width: 300px;

@@ -142,8 +142,9 @@ section{
     @include formatting();
 
     position: fixed;
-    top: 150px;
-    left:200px;
+    top: 30%;
+    left: 40%;
+    right: 40%;
     z-index: 2;
     height: 400px;
     width: 300px;
@@ -220,8 +221,9 @@ section{
     @include formatting();
 
     position: fixed;
-    top: 150px;
-    left:200px;
+    top: 30%;
+    left: 40%;
+    right: 40%;
     z-index: 2;
     height: 400px;
     width: 300px;

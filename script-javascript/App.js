@@ -21,7 +21,6 @@ $(document).ready(function () {
     $body.find('div .openLogin').each(function() {
         let $popup = $(this);
         $popup.on('click', function() {
-
             $body.find('.login-Moodle').removeClass('is-hidden');
             $body.find('.overlay').removeClass('is-hidden');
             //loginPopup.unfold($popup);
