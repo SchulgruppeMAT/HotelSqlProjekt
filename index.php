@@ -34,7 +34,6 @@
             </div>
         </header>
 
-<<<<<<< HEAD:index.html
         <div class="is-hidden login-Popup"> 
             <button class="close-button close-pos">X</button>
             <h1>Log In</h1>
@@ -73,55 +72,6 @@
             Sie haben bereits einen Account. Dann Loggen Sie sich jetzt ein.
             <button class="std-button toLogIn">Log in</button>
         </p>
-=======
-        <div class="is-hidden login-Moodle"> 
-            <form method="post">
-                <button class="close-button close-pos">X</button>
-                <h1>Log In</h1>
-
-                <p>
-                    <label>Benutzername<br><input type="text" name="txt_userInput"></label><br>
-                    <label>Passwort<br><input type="password" name="txt_pw"></label><br>
-
-                    <button class="std-button login-pos" name="btc_login">Einloggen</button>
-                </p>
-                <p class="pw-forgot">
-                    <a href="#">Passwort vergessen?</a>
-                </p>
-                <p>
-                    Sie haben noch keinen Account. Dann Registrieren Sie sich jetzt.
-                    <button class="std-button switch-pos" name="btc_pwForget">Sign up</button>
-                </p>
-            </form>     
-            <?php
-                include("script-php/login_script.php");
-            ?>
-        </div>
-
-        <div class="is-hidden signUp-Moodle">
-            <form method="post">
-                <button class="close-button close-pos">X</button> 
-                <h1>Sign up</h1>
-                <p>
-                    <label>Voller Name<br><input type="text" name="txt_fullname"></label><br>
-                    <label>Benutzername<br><input type="text" name="txt_username"></label><br>
-                    <label>e-mail<br><input type="email" name="txt_email"></label><br>
-
-                    <label>Passwort<br><input type="password" name="txt_pw"></label><br>
-                    <label>Passwort(Bestätigung)<br><input type="password" name="txt_pwC"></label><br>
-                    <br>
-                        <button class="std-button" name="btc_register">Registrieren</button><br>
-                    <br>
-                </p>
-                <p>
-                    Sie haben bereits einen Account. Dann Loggen Sie sich jetzt ein.
-                    <button class="std-button" name="btc_refLogin">Log in</button>
-                </p>
-            </form>
-            <?php
-                include("script-php/register_script.php");
-            ?>
->>>>>>> e2893814a51cbbe7cb973c60c316b29d5f1292c6:index.php
         </div>
 
         <div class="slider" style="margin: 0;">
