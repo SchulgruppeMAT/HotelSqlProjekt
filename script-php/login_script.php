@@ -2,11 +2,6 @@
     // Database connection $connection
     include("DBconnection.php");
 
-    /*if(isset($_POST['btc_login']))
-    {
-        echo "es hat soweit geklappt";
-    }
-    */
 
     if(isset($_POST['btc_login'],$_POST['txt_userInput'],$_POST['txt_pw']))
     {
@@ -25,12 +20,11 @@
             if(password_verify($inp_password, $db_passw))
             {
                 // TODO ref link and session.start();
-                echo "angemeldet";
+                echo "<script>alert('Angemeldet');</script>";
             }
             else
             {
-                // TODO pop up for "wrong password", mby with echo 
-                echo "wrong pw";
+                echo "<script>alert('Falsches PW');</script>";
             }
         }
     }
