@@ -125,7 +125,7 @@ section {
   section .buchen {
     float: right; }
 
-.login-Moodle {
+.login-Popup {
   margin: 0;
   padding: 0;
   color: white;
@@ -140,20 +140,20 @@ section {
   width: 300px;
   background-color: #2C79CC;
   color: white; }
-  .login-Moodle h1 {
+  .login-Popup h1 {
     font-size: 24px;
     font-family: 'Merriweather', serif; }
-  .login-Moodle h1 {
+  .login-Popup h1 {
     text-align: center;
     margin-right: 0; }
-  .login-Moodle p {
+  .login-Popup p {
     margin-left: 20%; }
-  .login-Moodle .pw-forgot a {
+  .login-Popup .pw-forgot a {
     color: #0000ee;
     text-decoration: none;
     transition-property: color, text-decoration;
     transition-duration: 0.2s; }
-    .login-Moodle .pw-forgot a:hover {
+    .login-Popup .pw-forgot a:hover {
       color: white;
       text-decoration: underline; }
 
@@ -188,7 +188,7 @@ section {
     background-color: white;
     border: 2px solid #425F7F; }
 
-.signUp-Moodle {
+.signUp-Popup {
   margin: 0;
   padding: 0;
   color: white;
@@ -203,13 +203,13 @@ section {
   width: 300px;
   background-color: #2C79CC;
   color: white; }
-  .signUp-Moodle h1 {
+  .signUp-Popup h1 {
     font-size: 24px;
     font-family: 'Merriweather', serif; }
-  .signUp-Moodle h1 {
+  .signUp-Popup h1 {
     text-align: center;
     margin: 2%; }
-  .signUp-Moodle p {
+  .signUp-Popup p {
     margin: 0;
     margin-left: 20%; }
 
