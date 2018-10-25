@@ -138,6 +138,7 @@ section {
   z-index: 2;
   height: 400px;
   width: 300px;
+  border-radius: 5px;
   background-color: #2C79CC;
   color: white; }
   .login-Popup h1 {
@@ -174,19 +175,21 @@ section {
 
 .close-button {
   margin: -3%;
-  height: 30px;
-  width: 30px;
-  font-size: 18px;
-  color: red;
+  height: 27px;
+  width: 27px;
+  font-size: 17px;
+  text-align: center;
+  color: white;
   background-color: #425F7F;
   float: right;
-  border: 2px solid #425F7F;
+  border: 1px solid white;
   border-radius: 50%;
   transition-property: color, background-color, border;
   transition-duration: 0.5s; }
   .close-button:hover {
     background-color: white;
-    border: 2px solid #425F7F; }
+    border: 2px solid #425F7F;
+    color: #425F7F; }
 
 .signUp-Popup {
   margin: 0;
