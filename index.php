@@ -35,44 +35,54 @@
         </header>
 
         <div class="is-hidden login-Popup"> 
-            <button class="close-button close-pos">X</button>
-            <h1>Log In</h1>
+            <form method="post">
+                <button class="close-button close-pos">X</button>
+                <h1>Log In</h1>
 
-            <p>
-                <label>Benutzername<br><input type="text"></label><br>
-                <label>Passwort<br><input type="password"></label><br>
+                <p>
+                    <label>Benutzername<br><input type="text" name="txt_userInput"></label><br>
+                    <label>Passwort<br><input type="password" name="txt_pw"></label><br>
 
-                <button class="std-button login-pos">Einloggen</button>
-            </p>
-            <p class="pw-forgot">
-                <a href="#">Passwort vergessen?</a>
-            </p>
-            <p>
-                Sie haben noch keinen Account. Dann Regestrieren Sie sich jetzt.
-                <button class="std-button toSignUp">Sign up</button>
-            </p>
-
+                    <button class="std-button login-pos" name="btc_login">Einloggen</button>
+                </p>
+                <p class="pw-forgot">
+                    <a href="#">Passwort vergessen?</a>
+                </p>
+                <p>
+                    Sie haben noch keinen Account. Dann Regestrieren Sie sich jetzt.
+                    <button class="std-button toSignUp">Sign up</button>
+                </p>
+            </form>
         </div>
 
-        <div class="is-hidden signUp-Popup">
-            <button class="close-button close-pos">X</button> 
-            <h1>Sign up</h1>
-            <p>
-                <label>Vollername<br><input type="text"></label><br>
-                <label>Benutzername<br><input type="text"></label><br>
-                <label>e-mail<br><input type="email"></label><br>
+        <?php
+            include("script-php/login_script.php");
+        ?>
 
-                <label>Passwort<br><input type="password"></label><br>
-                <label>Passwort<br><input type="password"></label><br>
-                <br>
-                <button class="std-button">Registrieren</button><br>
-                <br>
-        </p>
-        <p>
-            Sie haben bereits einen Account. Dann Loggen Sie sich jetzt ein.
-            <button class="std-button toLogIn">Log in</button>
-        </p>
+        <div class="is-hidden signUp-Popup">             
+                <button class="close-button close-pos">X</button> 
+                <h1>Sign up</h1>
+            <form method="post">   
+                <p>
+                    <label>Vollername<br><input type="text" name="txt_fullname"></label><br>
+                    <label>Benutzername<br><input type="text" name="txt_username"></label><br>
+                    <label>e-mail<br><input type="email" name="txt_email"></label><br>
+
+                    <label>Passwort<br><input type="password" name="txt_pw"></label><br>
+                    <label>Passwort Bestätigen<br><input type="password" name="txt_pwC"></label><br>
+                    <br>
+                        <button class="std-button" name="btn_register">Registrieren</button><br>
+                    <br>
+                </p>
+                <p>
+                    Sie haben bereits einen Account. Dann Loggen Sie sich jetzt ein.
+                    <button class="std-button toLogIn" name="btn_ToLogin">Log in</button>
+                </p>
+            </form>
         </div>
+        <?php
+            include("script-php/register_script.php");
+        ?>
 
         <div class="slider" style="margin: 0;">
             <div><img src="pictures/slider/slider-pic-harbour.jpg"></div>

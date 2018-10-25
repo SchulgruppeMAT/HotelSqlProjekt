@@ -1,14 +1,13 @@
 <?php
-    // Database connection $con
-    include(DBconnection.php);
+    // Database connection $connection
+    include("DBconnection.php");
 
-    // TODO html two Inputfields / a confirmbutton
-    
-    if(isset($_POST['//ConfirmButton'],$_POST['//Inputfield(username)'],$_POST['//Inputfield(passwd)']))
+
+    if(isset($_POST['btc_login'],$_POST['txt_userInput'],$_POST['txt_pw']))
     {
         // trimming the input
-        $inp_username = trim($_POST['//Inputfield(username)']);
-        $inp_password = trim($_POST['//Inputfield(passwd)']);
+        $inp_username = trim($_POST['txt_userInput']);
+        $inp_password = trim($_POST['txt_pw']);
         // Select the pw for the username
         $stmt = $connection->prepare("SELECT passwort FROM logindata WHERE logindata.username = :txt_user LIMIT 1");
         $stmt->bindParam(':txt_user', $inp_username);
@@ -21,10 +20,11 @@
             if(password_verify($inp_password, $db_passw))
             {
                 // TODO ref link and session.start();
+                echo "<script>alert('Angemeldet');</script>";
             }
             else
             {
-                // TODO pop up for "wrong password", mby with echo 
+                echo "<script>alert('Falsches PW');</script>";
             }
         }
     }
