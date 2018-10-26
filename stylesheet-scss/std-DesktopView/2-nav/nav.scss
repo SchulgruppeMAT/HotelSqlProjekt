@@ -1,0 +1,39 @@
+@import "../../partial/std-formatting.scss";
+
+nav{
+    @include reset();
+
+    background-color: #425F7F;
+    text-align: center;
+
+    margin-top: -5%;
+
+    ul{
+        @include reset();
+        margin: 1%;
+
+        display: inline-block;
+        list-style-type: none;
+    }
+    li{
+        
+        display: inline-block;
+        background-color: #425F7F;
+        padding: 5px;
+        transition-property: background-color, color;
+        transition-duration: 0.5s;
+
+        &:hover{
+            background-color: #84BFFF;
+        
+            a{
+                color: #1C4B7F;
+            }
+        }
+    }
+    a{
+        @include formatting();
+
+        text-decoration: none;
+    }
+}

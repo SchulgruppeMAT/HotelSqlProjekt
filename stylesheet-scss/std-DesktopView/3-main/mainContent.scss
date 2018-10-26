@@ -1,0 +1,23 @@
+@import "../../partial/std-formatting.scss";
+
+section{
+    @include reset();
+    @include formatting();
+    
+    padding: 10px;
+    margin: 5%;
+
+    width: 85%;
+    height: 300px;
+    background-color: #2C79CC;
+
+    img{
+        float: left;
+    }
+
+    
+
+    .buchen{
+        float: right;
+    }
+}

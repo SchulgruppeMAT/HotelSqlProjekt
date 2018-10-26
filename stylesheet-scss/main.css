@@ -1,219 +1,226 @@
-body {
-  margin: 0;
-  padding: 0;
-  color: white;
-  background-image: url(../pictures/background/background-pic.jpg); }
-
-.my-body-noscroll-class {
-  overflow: hidden; }
-
-.is-hidden {
-  display: none; }
-
-.wrapper {
-  margin: 0;
-  padding: 0;
-  color: white;
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  background-color: #1C4B7F; }
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.5;
-  z-index: 1;
-  background-color: #000; }
-
-.higher-index {
-  z-index: 3; }
-
-header {
-  font-family: 'Kodchasan', sans-serif;
-  color: #64CDFF;
-  padding: 10px; }
-  header h1 {
-    font-size: 24px;
-    font-family: 'Merriweather', serif; }
-  header h1 {
+@media screen and (min-width: 1024px) {
+  body {
     margin: 0;
     padding: 0;
     color: white;
-    font-size: 52px; }
+    background-image: url(../pictures/background/background-pic.jpg); }
 
-.header-nav {
-  margin: 0;
-  padding: 0;
-  color: white; }
-  .header-nav ul {
+  .my-body-noscroll-class {
+    overflow: hidden; }
+
+  .is-hidden {
+    display: none; }
+
+  .wrapper {
     margin: 0;
     padding: 0;
     color: white;
-    margin: 1%;
-    display: inline-block;
-    list-style-type: none; }
-  .header-nav li {
-    display: inline-block;
-    background-color: #425F7F;
-    padding: 5px;
-    transition-property: background-color, color;
-    transition-duration: 0.5s; }
-    .header-nav li:hover {
-      background-color: #84BFFF; }
-      .header-nav li:hover a {
-        color: #1C4B7F; }
-  .header-nav a {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #1C4B7F; }
+
+  header {
     font-family: 'Kodchasan', sans-serif;
     color: #64CDFF;
-    text-decoration: none; }
-    .header-nav a h1 {
+    padding: 10px; }
+    header h1 {
       font-size: 24px;
       font-family: 'Merriweather', serif; }
-
-nav {
-  margin: 0;
-  padding: 0;
-  color: white;
-  background-color: #425F7F;
-  text-align: center;
-  margin-top: -5%; }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    color: white;
-    margin: 1%;
-    display: inline-block;
-    list-style-type: none; }
-  nav li {
-    display: inline-block;
-    background-color: #425F7F;
-    padding: 5px;
-    transition-property: background-color, color;
-    transition-duration: 0.5s; }
-    nav li:hover {
-      background-color: #84BFFF; }
-      nav li:hover a {
-        color: #1C4B7F; }
-  nav a {
-    font-family: 'Kodchasan', sans-serif;
-    color: #64CDFF;
-    text-decoration: none; }
-    nav a h1 {
-      font-size: 24px;
-      font-family: 'Merriweather', serif; }
-
-section {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: 'Kodchasan', sans-serif;
-  color: #64CDFF;
-  padding: 10px;
-  margin: 5%;
-  width: 85%;
-  height: 300px;
-  background-color: #2C79CC; }
-  section h1 {
-    font-size: 24px;
-    font-family: 'Merriweather', serif; }
-  section img {
-    float: left; }
-  section .buchen {
-    float: right; }
-
-.login-Popup {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: 'Kodchasan', sans-serif;
-  color: #64CDFF;
-  position: fixed;
-  top: 30%;
-  left: 40%;
-  right: 40%;
-  z-index: 2;
-  height: 400px;
-  width: 300px;
-  border-radius: 5px;
-  background-color: #2C79CC;
-  color: white; }
-  .login-Popup h1 {
-    font-size: 24px;
-    font-family: 'Merriweather', serif; }
-  .login-Popup h1 {
-    text-align: center;
-    margin-right: 0; }
-  .login-Popup p {
-    margin-left: 20%; }
-  .login-Popup .pw-forgot a {
-    color: #0000ee;
-    text-decoration: none;
-    transition-property: color, text-decoration;
-    transition-duration: 0.2s; }
-    .login-Popup .pw-forgot a:hover {
+    header h1 {
+      margin: 0;
+      padding: 0;
       color: white;
-      text-decoration: underline; }
+      font-size: 52px; }
 
-.login-pos {
-  margin-top: 5%; }
-
-.std-button {
-  background-color: #425F7F;
-  color: white;
-  border: 2px solid white;
-  padding: 5px;
-  transition-property: color, background-color, border;
-  transition-duration: 0.5s; }
-  .std-button:hover {
-    background-color: white;
-    color: #425F7F;
-    border: 2px solid #425F7F; }
-
-.close-button {
-  margin: -3%;
-  height: 27px;
-  width: 27px;
-  font-size: 17px;
-  text-align: center;
-  color: white;
-  background-color: #425F7F;
-  float: right;
-  border: 1px solid white;
-  border-radius: 50%;
-  transition-property: color, background-color, border;
-  transition-duration: 0.5s; }
-  .close-button:hover {
-    background-color: white;
-    border: 2px solid #425F7F;
-    color: #425F7F; }
-
-.signUp-Popup {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: 'Kodchasan', sans-serif;
-  color: #64CDFF;
-  position: fixed;
-  top: 30%;
-  left: 40%;
-  right: 40%;
-  z-index: 2;
-  height: 400px;
-  width: 300px;
-  background-color: #2C79CC;
-  color: white; }
-  .signUp-Popup h1 {
-    font-size: 24px;
-    font-family: 'Merriweather', serif; }
-  .signUp-Popup h1 {
-    text-align: center;
-    margin: 2%; }
-  .signUp-Popup p {
+  .header-nav {
     margin: 0;
-    margin-left: 20%; }
+    padding: 0;
+    color: white; }
+    .header-nav ul {
+      margin: 0;
+      padding: 0;
+      color: white;
+      margin: 1%;
+      display: inline-block;
+      list-style-type: none; }
+    .header-nav li {
+      display: inline-block;
+      background-color: #425F7F;
+      padding: 5px;
+      transition-property: background-color, color;
+      transition-duration: 0.5s; }
+      .header-nav li:hover {
+        background-color: #84BFFF; }
+        .header-nav li:hover a {
+          color: #1C4B7F; }
+    .header-nav a {
+      font-family: 'Kodchasan', sans-serif;
+      color: #64CDFF;
+      text-decoration: none; }
+      .header-nav a h1 {
+        font-size: 24px;
+        font-family: 'Merriweather', serif; }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    background-color: #000; }
+
+  .higher-index {
+    z-index: 3; }
+
+  .login-pos {
+    margin-top: 5%; }
+
+  .login-Popup {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Kodchasan', sans-serif;
+    color: #64CDFF;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    right: 40%;
+    z-index: 2;
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #2C79CC;
+    color: white; }
+    .login-Popup h1 {
+      font-size: 24px;
+      font-family: 'Merriweather', serif; }
+    .login-Popup h1 {
+      text-align: center;
+      margin-right: 0; }
+    .login-Popup p {
+      margin-left: 20%; }
+    .login-Popup .pw-forgot a {
+      color: #0000ee;
+      text-decoration: none;
+      transition-property: color, text-decoration;
+      transition-duration: 0.2s; }
+      .login-Popup .pw-forgot a:hover {
+        color: white;
+        text-decoration: underline; }
+
+  .signUp-Popup {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Kodchasan', sans-serif;
+    color: #64CDFF;
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    right: 40%;
+    z-index: 2;
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #2C79CC;
+    color: white; }
+    .signUp-Popup h1 {
+      font-size: 24px;
+      font-family: 'Merriweather', serif; }
+    .signUp-Popup h1 {
+      text-align: center;
+      margin-right: 0; }
+    .signUp-Popup p {
+      margin-left: 20%; }
+    .signUp-Popup h1 {
+      text-align: center;
+      margin: 2%; }
+    .signUp-Popup p {
+      margin: 0;
+      margin-left: 20%; }
+
+  .std-button {
+    background-color: #425F7F;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    transition-property: color, background-color, border;
+    transition-duration: 0.5s; }
+    .std-button:hover {
+      background-color: white;
+      color: #425F7F;
+      border: 2px solid #425F7F; }
+
+  .close-button {
+    margin: -3%;
+    height: 27px;
+    width: 27px;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    background-color: #425F7F;
+    float: right;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition-property: color, background-color, border;
+    transition-duration: 0.5s; }
+    .close-button:hover {
+      background-color: white;
+      border: 2px solid #425F7F;
+      color: #425F7F; }
+
+  nav {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #425F7F;
+    text-align: center;
+    margin-top: -5%; }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      color: white;
+      margin: 1%;
+      display: inline-block;
+      list-style-type: none; }
+    nav li {
+      display: inline-block;
+      background-color: #425F7F;
+      padding: 5px;
+      transition-property: background-color, color;
+      transition-duration: 0.5s; }
+      nav li:hover {
+        background-color: #84BFFF; }
+        nav li:hover a {
+          color: #1C4B7F; }
+    nav a {
+      font-family: 'Kodchasan', sans-serif;
+      color: #64CDFF;
+      text-decoration: none; }
+      nav a h1 {
+        font-size: 24px;
+        font-family: 'Merriweather', serif; }
+
+  section {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Kodchasan', sans-serif;
+    color: #64CDFF;
+    padding: 10px;
+    margin: 5%;
+    width: 85%;
+    height: 300px;
+    background-color: #2C79CC; }
+    section h1 {
+      font-size: 24px;
+      font-family: 'Merriweather', serif; }
+    section img {
+      float: left; }
+    section .buchen {
+      float: right; } }
 
 /*# sourceMappingURL=main.css.map */

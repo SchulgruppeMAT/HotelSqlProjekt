@@ -1,0 +1,24 @@
+@import "../../partial/std-formatting.scss";
+
+body{
+    @include reset();
+    background-image: url(../pictures/background/background-pic.jpg);
+}
+
+.my-body-noscroll-class {
+    overflow: hidden;
+}
+
+.is-hidden{
+    display: none;
+}
+
+.wrapper{
+    @include reset();
+
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    background-color: #1C4B7F
+}
