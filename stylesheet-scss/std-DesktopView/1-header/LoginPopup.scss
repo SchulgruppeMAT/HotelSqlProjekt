@@ -50,13 +50,13 @@
 
     .pw-forgot{
         a{
-            color: rgb(0, 0, 238);
+            color: rgb(200, 200, 200);
             text-decoration: none;
             transition-property: color, text-decoration;
             transition-duration: 0.2s;
 
             &:hover{
-                color: white;
+                color: rgb(0, 0, 238);
                 text-decoration: underline;
             }
         }

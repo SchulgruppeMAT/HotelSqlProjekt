@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px){
+
     //**********Body************
         // In the Body Style you can find the Importing of the Backgroundimage,
         // You can find the .wrapper class and some other classes like is-hidden and my-body-noscroll-class
@@ -20,4 +20,69 @@
     //*******MainContent******
         // Yet just Placeholder
     @import "std-DesktopView/3-main/mainContent.scss";
+
+    @media screen and (min-width: 1080px) and (max-width: 1400px){
+        @import "partial/std-formatting.scss";
+
+        .wrapper{
+            @include reset();
+
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+
+            background-color: #1C4B7F
+        }
+
+    section{
+        @include reset();
+        @include formatting();
+        
+        color: white;
+
+        margin: 5%;
+        width: 85%;
+        height: 220px;
+        background-color: #2C79CC;
+
+        a{
+            color: rgb(200, 200, 200);
+            text-decoration: none;
+            transition-property: color, text-decoration;
+            transition-duration: 0.2s;
+
+                &:hover{
+                    color: rgb(0, 0, 238);
+                    text-decoration: underline;
+            }
+        }
+
+        img{
+            float: left;
+            width: 320px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        .sectionTitle{
+            text-align: center;
+            margin: 1%;
+            margin-top: 10px;
+        }
+
+        .booking-btn{
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .price{
+            margin-bottom: 15px;
+        }
+
+        .booking{
+            position: relative;
+            bottom: 20%;
+            left: 40%;
+        }
+    }
 }
