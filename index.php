@@ -35,10 +35,9 @@
         </header>
 
         <div class="is-hidden login-Popup"> 
-            <form method="post">
                 <button class="close-button close-pos">X</button>
                 <h1>Log In</h1>
-
+            <form method="post">
                 <p>
                     <label>Benutzername<br><input type="text" name="txt_userInput"></label><br>
                     <label>Passwort<br><input type="password" name="txt_pw"></label><br>
@@ -48,11 +47,12 @@
                 <p class="pw-forgot">
                     <a href="#">Passwort vergessen?</a>
                 </p>
+            </form>
                 <p>
                     Sie haben noch keinen Account. Dann Regestrieren Sie sich jetzt.
                     <button class="std-button toSignUp">Sign up</button>
                 </p>
-            </form>
+
         </div>
 
         <?php
@@ -74,11 +74,11 @@
                         <button class="std-button" name="btn_register">Registrieren</button><br>
                     <br>
                 </p>
+            </form>
                 <p>
                     Sie haben bereits einen Account. Dann Loggen Sie sich jetzt ein.
-                    <button class="std-button toLogIn" name="btn_ToLogin">Log in</button>
+                    <button class="std-button toLogIn">Log in</button>
                 </p>
-            </form>
         </div>
         <?php
             include("script-php/register_script.php");

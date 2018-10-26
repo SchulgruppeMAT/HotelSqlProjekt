@@ -10,6 +10,6 @@
 			}
 			catch(PDOException $e)
 			{
-				echo "Error: " . $e->getMessage();
+				echo "<script>console.log('$e');</script>";
 			}
 ?>
