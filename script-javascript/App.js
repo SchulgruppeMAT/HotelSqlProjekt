@@ -49,9 +49,17 @@ $(function () {
         //global Closing Button
         $body.find('div .close-button').each(function(){
             let $closeBtn = $(this);
-            $closeBtn.on('click', function(){
+            $closeBtn.on('click', function() {
                 $closeBtn = $(this);
                 signUpLogInPopup.closingBtn($closeBtn);
             });
-        });   
+        });
+        
+        $body.find('.booking-btn').each(function(){
+            let $bookingButton = $(this);
+            $bookingButton.on('click', function (){
+                const $parentID = $bookingButton.parent().parent().attr('id');
+                $body.find('.bookingPopup[id="' + $parentID + '-bookingPopup"]').removeClass('is-hidden');
+            });
+        });
     });

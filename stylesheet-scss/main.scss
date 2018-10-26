@@ -20,6 +20,7 @@
     //*******MainContent******
         // Yet just Placeholder
     @import "std-DesktopView/3-main/mainContent.scss";
+    @import "std-DesktopView/3-main/bookingPopup.scss";
 
     @media screen and (min-width: 1080px) and (max-width: 1400px){
         @import "partial/std-formatting.scss";

@@ -102,7 +102,7 @@
 
         <main>
             <!--Einzelzimmer-->
-            <section>                
+            <section id="1">                
                 <img src="pictures/rooms/penthouse/thumbnail.jpg">
 
                 <div class="booking-info">
@@ -120,9 +120,19 @@
                     <button class="booking-btn std-button">Buchen</button>
                 </div>
             </section>
+            <!--Booking Popup-->
+            <div id="1-bookingPopup" class="bookingPopup ">
+                <button class="close-button">X</button>
+                
+                <img>
+                <h1>Einzelzimmer</h1>
+                <p>
+                    
+                </p>
+            </div>
 
             <!--Appartment-->
-            <section>
+            <section id="2">
                 <img src="pictures/rooms/penthouse/thumbnail.jpg">
 
                 <div class="booking-info">
@@ -140,9 +150,14 @@
                     <button class="booking-btn std-button">Buchen</button>
                 </div>
             </section>
+            <!--Booking Popup-->
+            <div id="2-bookingPopup" class="bookingPopup is-hidden">
+                <button class="close-button">X</button>
+                2
+            </div>
 
             <!--Zweizimmer-->
-            <section>
+            <section id="3">
                 <img src="pictures/rooms/penthouse/thumbnail.jpg">
 
                 <div class="booking-info">
@@ -160,9 +175,14 @@
                     <button class="booking-btn std-button">Buchen</button>
                 </div>
             </section>
-
+            <!--Booking Popup-->
+            <div id="3-bookingPopup" class="bookingPopup is-hidden">
+                <button class="close-button">X</button>
+                3
+            </div>
+            
             <!--Einzelzimmer-->
-            <section>
+            <section id="4">
                 <img src="pictures/rooms/penthouse/thumbnail.jpg">
 
                 <div class="booking-info">
@@ -180,9 +200,14 @@
                     <button class="booking-btn std-button">Buchen</button>
                 </div>
             </section>
+            <!--Booking Popup-->
+            <div id="4-bookingPopup" class="bookingPopup is-hidden">
+                <button class="close-button">X</button>
+                4
+            </div>
 
             <!--Bungalo-->
-            <section>
+            <section id="5">
                 <img src="pictures/rooms/penthouse/thumbnail.jpg">
 
                 <div class="booking-info">
@@ -200,6 +225,11 @@
                     <button class="booking-btn std-button">Buchen</button>
                 </div>
             </section>
+            <!--Booking Popup-->
+            <div id="5-bookingPopup" class="bookingPopup is-hidden">
+                <button class="close-button">X</button>
+                5
+            </div>
 
         </main>
 

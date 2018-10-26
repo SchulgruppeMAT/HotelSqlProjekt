@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   color: white;
-  background-image: url(../pictures/background/background-pic.jpg); }
+  background-image: url(../pictures/background/background-pic.jpg);
+  overflow-x: hidden; }
 
 .my-body-noscroll-class {
   overflow: hidden; }
@@ -250,6 +251,36 @@ section {
     section a:hover {
       color: #0000ee;
       text-decoration: underline; }
+
+.bookingPopup {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Kodchasan', sans-serif;
+  color: #64CDFF;
+  width: 80%;
+  height: 60%;
+  background-color: #2C79CC;
+  color: white;
+  position: fixed;
+  top: 15%;
+  left: 10%;
+  vertical-align: middle;
+  line-height: 60%; }
+  .bookingPopup h1 {
+    font-size: 24px;
+    font-family: 'Merriweather', serif; }
+  .bookingPopup img {
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin: 5%;
+    margin-top: 7.5%;
+    width: 600px;
+    height: 400px;
+    background-color: yellow; }
+  .bookingPopup .close-button {
+    margin: -1%; }
 
 @media screen and (min-width: 1080px) and (max-width: 1400px) {
   .wrapper {

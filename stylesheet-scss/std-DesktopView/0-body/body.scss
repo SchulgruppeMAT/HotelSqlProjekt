@@ -3,6 +3,7 @@
 body{
     @include reset();
     background-image: url(../pictures/background/background-pic.jpg);
+    overflow-x: hidden;
 }
 
 .my-body-noscroll-class {
