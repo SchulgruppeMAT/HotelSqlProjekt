@@ -46,14 +46,19 @@
       list-style-type: none; }
     .header-nav li {
       display: inline-block;
-      background-color: #425F7F;
+      background-color: #84BFFF;
       padding: 5px;
-      transition-property: background-color, color;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      transition-property: background-color, color, border;
       transition-duration: 0.5s; }
+      .header-nav li a {
+        color: #425F7F; }
       .header-nav li:hover {
-        background-color: #84BFFF; }
+        background-color: #1C4B7F;
+        border: 1px solid #84BFFF; }
         .header-nav li:hover a {
-          color: #1C4B7F; }
+          color: #84BFFF; }
     .header-nav a {
       font-family: 'Kodchasan', sans-serif;
       color: #64CDFF;
