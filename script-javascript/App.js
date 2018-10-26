@@ -4,7 +4,7 @@ $(function () {
 
         const $body = $('body');
         
-        // bxslider Config
+        // bxslider Options
         $('.slider').bxSlider({
             slideWidth: 1600,
             slideHeight: 200,
@@ -53,5 +53,5 @@ $(function () {
                 $closeBtn = $(this);
                 signUpLogInPopup.closingBtn($closeBtn);
             });
-        })   
+        });   
     });
