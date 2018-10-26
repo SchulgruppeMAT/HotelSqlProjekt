@@ -101,90 +101,103 @@
         </nav>
 
         <main>
-            <!--Penthouse-->
-            <section>
+            <!--Einzelzimmer-->
+            <section>                
+                <img src="pictures/rooms/penthouse/thumbnail.jpg">
 
-                <div class="booking-text">
-                    <img src="pictures/rooms/penthouse/thumbnail.jpg" width="350px" height="250px">
-
-
-                    <h1>Penthouse</h1>
-                    <p class="booking-descripton">lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem
-                        Ipsum lorem Ipsum lorem Ipsum lorem Ipsum</p>
-                    <a href="#">Mehr Infos</a>
+                <div class="booking-info">
+                    <h1 class="sectionTitle">Einzelzimmer</h1>
+                    <p class="booking-descripton">
+                            Buchen Sie jetzt unser beliebtes Einzelzimmer im Hotel, 
+                            mit wunderschönen Ausblick auf den Gardasee. Zusätzlich bekommen Sie 20 % Rabat, 
+                            wenn Sie all inklusiv dazu buchen.
+                    </p>
+                    <a href="#">Sie brauchen mehr Informationen?</a> 
                 </div>
-
-                <div class="buchen">
-                    <p class="price">999,99</p>
-                    <button class="booking">Buchen</button>
+                
+                <div class="booking">
+                    <p class="price">240,00€</p>
+                    <button class="booking-btn std-button">Buchen</button>
                 </div>
             </section>
 
             <!--Appartment-->
             <section>
-                <img width="250px" height="250px">
+                <img src="pictures/rooms/penthouse/thumbnail.jpg">
 
-                <div class="booking-text">
-                    <h1>Penthouse</h1>
-                    <p class="booking-descripton">lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem
-                        Ipsum lorem Ipsum lorem Ipsum lorem Ipsum</p>
-                    <a href="#">Mehr Infos</a>
+                <div class="booking-info">
+                    <h1 class="sectionTitle">Einzelzimmer</h1>
+                    <p class="booking-descripton">
+                            Buchen Sie jetzt unser beliebtes Einzelzimmer im Hotel, 
+                            mit wunderschönen Ausblick auf den Gardasee. Zusätzlich bekommen Sie 20 % Rabat, 
+                            wenn Sie all inklusiv dazu buchen.
+                    </p>
+                    <a href="#">Sie brauchen mehr Informationen?</a> 
                 </div>
-
-                <div class="buchen">
-                    <p class="price">999,99</p>
-                    <button class="booking">Buchen</button>
+                
+                <div class="booking">
+                    <p class="price">240,00€</p>
+                    <button class="booking-btn std-button">Buchen</button>
                 </div>
             </section>
 
             <!--Zweizimmer-->
             <section>
-                <img width="250px" height="250px">
+                <img src="pictures/rooms/penthouse/thumbnail.jpg">
 
-                <div class="booking-text">
-                    <h1>Penthouse</h1>
-                    <p class="booking-descripton">lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem
-                        Ipsum lorem Ipsum lorem Ipsum lorem Ipsum</p>
-                    <a href="#">Mehr Infos</a>
+                <div class="booking-info">
+                    <h1 class="sectionTitle">Einzelzimmer</h1>
+                    <p class="booking-descripton">
+                            Buchen Sie jetzt unser beliebtes Einzelzimmer im Hotel, 
+                            mit wunderschönen Ausblick auf den Gardasee. Zusätzlich bekommen Sie 20 % Rabat, 
+                            wenn Sie all inklusiv dazu buchen.
+                    </p>
+                    <a href="#">Sie brauchen mehr Informationen?</a> 
                 </div>
-
-                <div class="buchen">
-                    <p class="price">999,99</p>
-                    <button class="booking">Buchen</button>
+                
+                <div class="booking">
+                    <p class="price">240,00€</p>
+                    <button class="booking-btn std-button">Buchen</button>
                 </div>
             </section>
 
             <!--Einzelzimmer-->
             <section>
-                <img width="250px" height="250px">
+                <img src="pictures/rooms/penthouse/thumbnail.jpg">
 
-                <div class="booking-text">
-                    <h1>Penthouse</h1>
-                    <p class="booking-descripton">lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem
-                        Ipsum lorem Ipsum lorem Ipsum lorem Ipsum</p>
-                    <a href="#">Mehr Infos</a>
+                <div class="booking-info">
+                    <h1 class="sectionTitle">Einzelzimmer</h1>
+                    <p class="booking-descripton">
+                            Buchen Sie jetzt unser beliebtes Einzelzimmer im Hotel, 
+                            mit wunderschönen Ausblick auf den Gardasee. Zusätzlich bekommen Sie 20 % Rabat, 
+                            wenn Sie all inklusiv dazu buchen.
+                    </p>
+                    <a href="#">Sie brauchen mehr Informationen?</a> 
                 </div>
-
-                <div class="buchen">
-                    <p class="price">999,99</p>
-                    <button class="booking">Buchen</button>
+                
+                <div class="booking">
+                    <p class="price">240,00€</p>
+                    <button class="booking-btn std-button">Buchen</button>
                 </div>
             </section>
 
             <!--Bungalo-->
             <section>
-                <img width="250px" height="250px">
+                <img src="pictures/rooms/penthouse/thumbnail.jpg">
 
-                <div class="booking-text">
-                    <h1>Penthouse</h1>
-                    <p class="booking-descripton">lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem
-                        Ipsum lorem Ipsum lorem Ipsum lorem Ipsum</p>
-                    <a href="#">Mehr Infos</a>
+                <div class="booking-info">
+                    <h1 class="sectionTitle">Einzelzimmer</h1>
+                    <p class="booking-descripton">
+                            Buchen Sie jetzt unser beliebtes Einzelzimmer im Hotel, 
+                            mit wunderschönen Ausblick auf den Gardasee. Zusätzlich bekommen Sie 20 % Rabat, 
+                            wenn Sie all inklusiv dazu buchen.
+                    </p>
+                    <a href="#">Sie brauchen mehr Informationen?</a> 
                 </div>
-
-                <div class="buchen">
-                    <p class="price">999,99</p>
-                    <button class="booking">Buchen</button>
+                
+                <div class="booking">
+                    <p class="price">240,00€</p>
+                    <button class="booking-btn std-button">Buchen</button>
                 </div>
             </section>
 

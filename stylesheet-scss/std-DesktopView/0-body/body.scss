@@ -12,13 +12,3 @@ body{
 .is-hidden{
     display: none;
 }
-
-.wrapper{
-    @include reset();
-
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-
-    background-color: #1C4B7F
-}
