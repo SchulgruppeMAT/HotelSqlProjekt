@@ -13,9 +13,7 @@
     position: fixed;
     top: 15%;
     left: 10%;
-
-    vertical-align: middle;
-        line-height:  60%;
+    float: left;
 
     img{
         @include reset();
@@ -28,7 +26,12 @@
         background-color: yellow;
     }
 
+    .booking-info{
+        margin-left: 50%;
+        margin-top: -35%;
+    }
+
     .close-button{
-        margin: -1%;
+        margin: -0.5%;    
     }
 }

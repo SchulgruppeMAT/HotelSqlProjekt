@@ -265,8 +265,7 @@ section {
   position: fixed;
   top: 15%;
   left: 10%;
-  vertical-align: middle;
-  line-height: 60%; }
+  float: left; }
   .bookingPopup h1 {
     font-size: 24px;
     font-family: 'Merriweather', serif; }
@@ -279,8 +278,11 @@ section {
     width: 600px;
     height: 400px;
     background-color: yellow; }
+  .bookingPopup .booking-info {
+    margin-left: 50%;
+    margin-top: -35%; }
   .bookingPopup .close-button {
-    margin: -1%; }
+    margin: -0.5%; }
 
 @media screen and (min-width: 1080px) and (max-width: 1400px) {
   .wrapper {
