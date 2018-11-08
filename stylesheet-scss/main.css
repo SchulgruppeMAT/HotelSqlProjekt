@@ -1,62 +1,22 @@
 body {
-  margin: 0;
-  padding: 0;
-  color: white;
-  background-image: url(../pictures/background/background-pic.jpg);
-  overflow-x: hidden; }
-
-.my-body-noscroll-class {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2d0d95+0,d9b400+68,d9b400+68 */
+  background: #2d0d95;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #2d0d95 0%, #d9b400 68%, #d9b400 68%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #2d0d95 0%, #d9b400 68%, #d9b400 68%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #2d0d95 0%, #d9b400 68%, #d9b400 68%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d0d95', endColorstr='#d9b400',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  display: grid;
+  grid-template-columns: 15% 65% 15%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 92vh;
+  padding: 2em;
   overflow: hidden; }
-
-.is-hidden {
-  display: none; }
-
-header {
-  font-family: 'Kodchasan', sans-serif;
-  color: #64CDFF;
-  padding: 10px; }
-  header h1 {
-    font-size: 24px;
-    font-family: 'Merriweather', serif; }
-  header h1 {
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-size: 52px; }
-
-.header-nav {
-  margin: 0;
-  padding: 0;
-  color: white; }
-  .header-nav ul {
-    margin: 0;
-    padding: 0;
-    color: white;
-    margin: 1%;
-    display: inline-block;
-    list-style-type: none; }
-  .header-nav li {
-    display: inline-block;
-    background-color: #84BFFF;
-    padding: 5px;
-    border: 1px solid transparent;
-    border-radius: 3px;
-    transition-property: background-color, color, border;
-    transition-duration: 0.5s; }
-    .header-nav li a {
-      color: #425F7F; }
-    .header-nav li:hover {
-      background-color: #1C4B7F;
-      border: 1px solid #84BFFF; }
-      .header-nav li:hover a {
-        color: #84BFFF; }
-  .header-nav a {
-    font-family: 'Kodchasan', sans-serif;
-    color: #64CDFF;
-    text-decoration: none; }
-    .header-nav a h1 {
-      font-size: 24px;
-      font-family: 'Merriweather', serif; }
 
 .overlay {
   position: fixed;
@@ -64,97 +24,250 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: black;
   opacity: 0.5;
-  z-index: 1;
-  background-color: #000; }
+  z-index: 0; }
 
-.higher-index {
-  z-index: 3; }
+.is-hidden {
+  display: none; }
 
-.login-pos {
-  margin-top: 5%; }
+aside {
+  background-color: #527BD8; }
+  aside figure {
+    background-color: #7B9BE4;
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    aside figure img {
+      margin-top: 10%;
+      width: 100px;
+      height: 100px;
+      border: none;
+      border-radius: 50%;
+      background-color: white; }
+    aside figure figcaption {
+      margin-top: 2%;
+      font-family: Open Sans;
+      font-size: 18px;
+      color: white; }
 
-.login-Popup {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: 'Kodchasan', sans-serif;
-  color: #64CDFF;
-  position: fixed;
-  top: 30%;
-  left: 40%;
-  right: 40%;
-  z-index: 2;
-  height: 400px;
-  width: 300px;
-  border-radius: 5px;
-  background-color: #2C79CC;
-  color: white; }
-  .login-Popup h1 {
-    font-size: 24px;
-    font-family: 'Merriweather', serif; }
-  .login-Popup h1 {
-    text-align: center;
-    margin-right: 0; }
-  .login-Popup p {
-    margin-left: 20%; }
-  .login-Popup .pw-forgot a {
-    color: #c8c8c8;
-    text-decoration: none;
-    transition-property: color, text-decoration;
+nav {
+  background-color: #7B9BE4;
+  padding-bottom: 20%;
+  padding-top: 20%;
+  margin-top: 40%;
+  line-height: 75%;
+  vertical-align: middle; }
+  nav ul {
+    height: 15%;
+    line-height: 40px;
+    vertical-align: middle;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    text-align: left; }
+  nav li {
+    width: 100%;
+    transition-property: background-color, color;
     transition-duration: 0.2s; }
-    .login-Popup .pw-forgot a:hover {
-      color: #0000ee;
+    nav li a {
+      padding: 1em;
+      color: white;
+      text-decoration: none;
+      font-family: Open Sans;
+      font-size: 16px; }
+    nav li:hover {
+      color: white;
+      background-color: rgba(150, 125, 229, 0.7); }
+
+.left {
+  z-index: 1;
+  box-shadow: 3px 1px 10px #707070; }
+
+header {
+  font-family: Open Sans;
+  margin-left: 10%;
+  margin-top: 2.5%; }
+  header h1 {
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold; }
+  header h2 {
+    font-weight: normal;
+    font-size: 34px;
+    padding: 0;
+    margin: 0; }
+
+main {
+  background-color: white;
+  background-image: url(mainBC.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  box-shadow: inset -3px -2px 7px #707070; }
+
+.container {
+  margin-top: 7%;
+  display: grid;
+  grid-template-columns: 450px 450px;
+  grid-template-rows: 300px 300px; }
+
+section {
+  background-color: #527BD8;
+  margin: 5%;
+  box-shadow: 5px 5px 10px #707070;
+  color: white; }
+  section h1 {
+    font-size: 34px;
+    font-weight: normal;
+    margin-top: 1%;
+    margin-left: 5%; }
+  section p {
+    font-size: 18px;
+    margin-left: 5%; }
+  section button {
+    width: 360px;
+    height: 60px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #967DE5;
+    text-align: center;
+    color: white;
+    margin-left: 5%;
+    font-size: 18px;
+    transition-property: background-color, color, border;
+    transition-duration: 0.5s; }
+    section button:hover {
+      background-color: white;
+      color: #967DE5;
+      border-color: #967DE5;
+      cursor: pointer; }
+
+.right {
+  z-index: 1;
+  box-shadow: 3px 1px 10px #707070; }
+
+.icon {
+  width: 60px;
+  height: 60px; }
+
+.recommended {
+  background-color: #7B9BE4;
+  margin-top: 70%; }
+  .recommended span {
+    color: white;
+    font-family: Open Sans;
+    width: 100%;
+    margin: 2%;
+    margin-top: 5%; }
+  .recommended font {
+    color: green; }
+  .recommended img {
+    width: 240px;
+    height: 240px;
+    border-radius: 45px;
+    margin-left: 20px;
+    margin-top: 2.5%; }
+
+.social-media {
+  margin-top: 40%;
+  background-color: #7B9BE4; }
+  .social-media span {
+    color: white;
+    font-family: Open Sans;
+    width: 100%; }
+  .social-media .img-container {
+    margin-top: 5%; }
+    .social-media .img-container .icon {
+      margin: 4px;
+      border-radius: 10px;
+      z-index: 1;
+      box-shadow: 2px 1px 5px #707070; }
+
+.footer {
+  margin-top: 50%;
+  background-color: #7B9BE4;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle; }
+  .footer a {
+    color: white;
+    font-family: Open Sans;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10%;
+    transition-property: color, text-decoration;
+    transition-duration: 0.3s; }
+    .footer a:hover {
+      color: #0000EE;
       text-decoration: underline; }
 
-.signUp-Popup {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: 'Kodchasan', sans-serif;
-  color: #64CDFF;
+.login {
+  background-color: #7B9BE4;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle; }
+  .login a {
+    color: white;
+    font-family: Open Sans;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 11%;
+    padding: 10px;
+    border-radius: 10px;
+    transition-property: color, background-color;
+    transition-duration: 0.5s; }
+    .login a:hover {
+      background-color: #967DE5; }
+
+.is-logged {
+  margin-top: 85%; }
+
+.login-Popup {
   position: fixed;
   top: 30%;
-  left: 40%;
-  right: 40%;
-  z-index: 2;
-  height: 400px;
-  width: 300px;
-  border-radius: 5px;
-  background-color: #2C79CC;
-  color: white; }
-  .signUp-Popup h1 {
-    font-size: 24px;
-    font-family: 'Merriweather', serif; }
-  .signUp-Popup h1 {
-    text-align: center;
-    margin-right: 0; }
-  .signUp-Popup p {
-    margin-left: 20%; }
-  .signUp-Popup h1 {
-    text-align: center;
-    margin: 2%; }
-  .signUp-Popup p {
-    margin: 0;
-    margin-left: 20%; }
+  left: 30%;
+  width: 650px;
+  height: 430px;
+  background-color: #527BD8; }
 
-.std-button {
-  background-color: #425F7F;
+.login-btn {
+  height: 80px;
+  width: 323px;
+  margin: none;
+  padding: none;
+  border: none;
+  background-color: #967DE5;
   color: white;
-  border: 2px solid white;
-  padding: 5px;
-  transition-property: color, background-color, border;
-  transition-duration: 0.5s; }
-  .std-button:hover {
-    background-color: white;
-    color: #425F7F;
-    border: 2px solid #425F7F; }
+  font-family: Open Sans;
+  font-size: 30px;
+  text-align: center;
+  z-index: -1; }
+  .login-btn:hover {
+    cursor: pointer; }
+
+.signup-btn {
+  height: 80px;
+  width: 323px;
+  margin: none;
+  padding: none;
+  border: none;
+  background-color: #967DE5;
+  color: white;
+  font-family: Open Sans;
+  font-size: 30px;
+  text-align: center; }
+  .signup-btn:hover {
+    cursor: pointer; }
 
 .close-button {
   margin: -3%;
   height: 25px;
   width: 25px;
   font-size: 17px;
+  z-index: 100;
   text-align: center;
   vertical-align: middle;
   line-height: 22px;
@@ -163,6 +276,7 @@ header {
   float: right;
   border: 1px solid white;
   border-radius: 50%;
+  z-index: 1;
   transition-property: color, background-color, border;
   transition-duration: 0.5s; }
   .close-button:hover {
@@ -170,169 +284,91 @@ header {
     border: 2px solid #425F7F;
     color: #425F7F; }
 
-nav {
-  margin: 0;
-  padding: 0;
-  color: white;
-  background-color: #425F7F;
-  text-align: center;
-  margin-top: -5%; }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    color: white;
-    margin: 1%;
-    display: inline-block;
-    list-style-type: none; }
-  nav li {
-    display: inline-block;
-    background-color: #425F7F;
-    padding: 5px;
-    transition-property: background-color, color;
-    transition-duration: 0.5s; }
-    nav li:hover {
-      background-color: #84BFFF; }
-      nav li:hover a {
-        color: #1C4B7F; }
-  nav a {
-    font-family: 'Kodchasan', sans-serif;
-    color: #64CDFF;
-    text-decoration: none; }
-    nav a h1 {
-      font-size: 24px;
-      font-family: 'Merriweather', serif; }
+.active-btn {
+  background-color: #527BD8; }
 
-.wrapper {
-  margin: 0;
-  padding: 0;
+.login-form {
+  font-family: Open Sans;
   color: white;
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  background-color: #1C4B7F; }
-
-section {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: 'Kodchasan', sans-serif;
-  color: #64CDFF;
-  color: white;
-  margin: 5%;
-  width: 85%;
-  height: 220px;
-  background-color: #2C79CC; }
-  section h1 {
-    font-size: 24px;
-    font-family: 'Merriweather', serif; }
-  section img {
-    float: left;
-    width: 320px;
-    height: 200px;
-    margin: 10px; }
-  section .sectionTitle {
-    text-align: center;
-    margin: 1%;
-    margin-top: 10px; }
-  section .booking-btn {
-    margin-right: 10px;
-    margin-bottom: 10px; }
-  section .price {
-    margin-bottom: 15px; }
-  section .booking {
-    position: relative;
-    bottom: 0%;
-    left: 62%; }
-  section a {
-    color: #c8c8c8;
-    text-decoration: none;
-    transition-property: color, text-decoration;
-    transition-duration: 0.2s; }
-    section a:hover {
-      color: #0000ee;
-      text-decoration: underline; }
-
-.bookingPopup {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family: 'Kodchasan', sans-serif;
-  color: #64CDFF;
   width: 80%;
-  height: 60%;
-  background-color: #2C79CC;
+  margin-left: 10%;
+  padding: 10px; }
+  .login-form input {
+    border: none;
+    border-radius: 14px;
+    height: 20px;
+    font-size: 18px; }
+
+.inputs {
+  background-color: #7B9BE4;
+  margin: 0;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 2.5%;
+  margin-bottom: 5%; }
+
+.std-button {
+  width: 100px;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: #967DE5;
+  text-align: center;
   color: white;
-  position: fixed;
-  top: 15%;
-  left: 10%;
-  float: left; }
-  .bookingPopup h1 {
+  margin-left: 5%;
+  margin: 2%;
+  font-size: 14px;
+  transition-property: background-color, color, border;
+  transition-duration: 0.5s; }
+  .std-button:hover {
+    background-color: white;
+    color: #967DE5;
+    border-color: #967DE5;
+    cursor: pointer; }
+
+.pw-forgot a {
+  color: #c8c8c8;
+  text-decoration: none;
+  transition-property: color, text-decoration;
+  transition-duration: 0.2s; }
+  .pw-forgot a:hover {
+    color: #0000ee;
+    text-decoration: underline; }
+
+.no-acc {
+  margin-left: 5%;
+  width: 90%;
+  font-family: 'Kodchasan', sans-serif;
+  color: white; }
+  .no-acc h1 {
     font-size: 24px;
     font-family: 'Merriweather', serif; }
-  .bookingPopup img {
-    margin: 0;
-    padding: 0;
-    color: white;
-    margin: 5%;
-    margin-top: 7.5%;
-    width: 600px;
-    height: 400px;
-    background-color: yellow; }
-  .bookingPopup .booking-info {
-    margin-left: 50%;
-    margin-top: -35%; }
-  .bookingPopup .close-button {
-    margin: -0.5%; }
 
-@media screen and (min-width: 1080px) and (max-width: 1400px) {
-  .wrapper {
-    margin: 0;
-    padding: 0;
-    color: white;
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    background-color: #1C4B7F; }
+.signUp-Popup {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  width: 650px;
+  height: 430px;
+  background-color: #527BD8; }
 
-  section {
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-family: 'Kodchasan', sans-serif;
-    color: #64CDFF;
-    color: white;
-    margin: 5%;
-    width: 85%;
-    height: 220px;
-    background-color: #2C79CC; }
-    section h1 {
-      font-size: 24px;
-      font-family: 'Merriweather', serif; }
-    section a {
-      color: #c8c8c8;
-      text-decoration: none;
-      transition-property: color, text-decoration;
-      transition-duration: 0.2s; }
-      section a:hover {
-        color: #0000ee;
-        text-decoration: underline; }
-    section img {
-      float: left;
-      width: 320px;
-      height: 200px;
-      margin: 10px; }
-    section .sectionTitle {
-      text-align: center;
-      margin: 1%;
-      margin-top: 10px; }
-    section .booking-btn {
-      margin-right: 10px;
-      margin-bottom: 10px; }
-    section .price {
-      margin-bottom: 15px; }
-    section .booking {
-      position: relative;
-      bottom: 20%;
-      left: 40%; } }
+.signup-form {
+  font-family: Open Sans;
+  color: white;
+  width: 80%;
+  margin-left: 10%;
+  padding: 10px; }
+  .signup-form input {
+    border: none;
+    border-radius: 14px;
+    height: 20px;
+    font-size: 18px; }
+
+.switchtoLogin {
+  margin-top: -25%;
+  margin-left: 60%;
+  width: 30%;
+  font-family: 'Kodchasan', sans-serif;
+  color: white; }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,19 +2,7 @@ $(function () {
     
     signUpLogInPopup = signUpLogInPopup;
 
-        const $body = $('body');
-        
-        // bxslider Options
-        $('.slider').bxSlider({
-            slideWidth: 1600,
-            slideHeight: 200,
-            minSlides: 1,
-            slideMargin: 0,
-            controls: false,
-            auto: true,
-            pause: 3500,
-            pager: false
-        });        
+        const $body = $('body');       
     
         //Login Sign up Popup
         $body.find('div .openLogin').each(function() {

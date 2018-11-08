@@ -1,89 +1,471 @@
+body{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2d0d95+0,d9b400+68,d9b400+68 */
+    background: #2d0d95; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #2d0d95 0%, #d9b400 68%, #d9b400 68%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #2d0d95 0%,#d9b400 68%,#d9b400 68%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #2d0d95 0%,#d9b400 68%,#d9b400 68%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d0d95', endColorstr='#d9b400',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-    //**********Body************
-        // In the Body Style you can find the Importing of the Backgroundimage,
-        // You can find the .wrapper class and some other classes like is-hidden and my-body-noscroll-class
+    display: grid;
+    grid-template-columns: 15% 65% 15%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 92vh;
+    padding: 2em;
+    overflow: hidden;
+}
 
-    @import "std-DesktopView/0-body/body.scss"; //Importing the Body file
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 0;
+}
 
-    //**********Header***********
-        // In the Header file you can find on the header style and the headernav style
-    @import "std-DesktopView/1-header/header.scss";
+.is-hidden{
+    display: none;
+}
 
-        // inside is the Popup mixin with the Style and the Includes no spezial
-        // some js needed css classes to let the Popup be visible and funktioning
-    @import "std-DesktopView/1-header/LoginPopup.scss";
+aside{
+    background-color: #527BD8;
 
-    //********Nav***********
-        // nav stlyes
-    @import "std-DesktopView/2-nav/nav.scss";
-
-    //*******MainContent******
-        // Yet just Placeholder
-    @import "std-DesktopView/3-main/mainContent.scss";
-    @import "std-DesktopView/3-main/bookingPopup.scss";
-
-    @media screen and (min-width: 1080px) and (max-width: 1400px){
-        @import "partial/std-formatting.scss";
-
-        .wrapper{
-            @include reset();
-
-            width: 70%;
-            margin-left: 15%;
-            margin-right: 15%;
-
-            background-color: #1C4B7F
-        }
-
-    section{
-        @include reset();
-        @include formatting();
-        
-        color: white;
-
-        margin: 5%;
-        width: 85%;
-        height: 220px;
-        background-color: #2C79CC;
-
-        a{
-            color: rgb(200, 200, 200);
-            text-decoration: none;
-            transition-property: color, text-decoration;
-            transition-duration: 0.2s;
-
-                &:hover{
-                    color: rgb(0, 0, 238);
-                    text-decoration: underline;
-            }
-        }
+    figure{
+        background-color: #7B9BE4;
+        width: 100%;
+        height: 20%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
 
         img{
-            float: left;
-            width: 320px;
-            height: 200px;
-            margin: 10px;
+            margin-top: 10%;
+            width: 100px;
+            height: 100px;
+            border: none;
+            border-radius: 50%;
+            background-color: white;
         }
 
-        .sectionTitle{
-            text-align: center;
-            margin: 1%;
-            margin-top: 10px;
+        figcaption{
+            margin-top: 2%;
+            font-family: Open Sans;
+            font-size: 18px;
+            color: white;
         }
 
-        .booking-btn{
-            margin-right: 10px;
-            margin-bottom: 10px;
+    }
+
+}
+
+nav{
+    background-color: #7B9BE4;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    margin-top: 40%;
+    line-height: 75%;
+    vertical-align: middle;
+
+    ul{
+        height: 15%;
+        line-height: 40px;
+        vertical-align: middle;
+        list-style-type: none;
+        width: 100%;
+        padding: 0;
+        text-align: left;
+    }
+
+    li{
+        width: 100%;
+        transition-property: background-color, color;
+        transition-duration: 0.2s;
+
+        a{
+            padding: 1em;
+            color: white;
+            text-decoration: none;
+            font-family: Open Sans;
+            font-size: 16px;
         }
 
-        .price{
-            margin-bottom: 15px;
-        }
-
-        .booking{
-            position: relative;
-            bottom: 20%;
-            left: 40%;
+        &:hover{
+            color: white;
+            background-color: rgba(150, 125, 229, 0.7);
         }
     }
+}
+
+.left{
+    z-index: 1;
+    box-shadow:  3px 1px 10px #707070;
+}
+
+header{
+    font-family: Open Sans;
+    margin-left: 10%;
+    margin-top: 2.5%;
+
+    h1{
+        font-size: 70px;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+    }
+    h2{
+        font-weight: normal;
+        font-size: 34px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+main{
+    background-color: white;
+    background-image: url(mainBC.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    box-shadow: inset -3px -2px 7px #707070;
+}
+
+.container {
+    margin-top: 7%;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 300px 300px;
+}
+
+section{
+    background-color: #527BD8;
+    margin: 5%;
+    box-shadow:  5px 5px 10px #707070;
+    color: white;
+
+    h1{
+        font-size: 34px;
+        font-weight: normal;
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+
+    p{
+        font-size: 18px;
+        margin-left: 5%;
+    }
+
+    button{
+        width: 360px;
+        height: 60px;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        background-color: #967DE5;
+        text-align: center;
+        color: white;
+        margin-left: 5%;
+        font-size: 18px;
+
+        transition-property: background-color, color, border;
+        transition-duration: 0.5s;
+
+        &:hover{
+            background-color: white;
+            color: #967DE5;
+            border-color: #967DE5;
+            cursor: pointer;
+        }
+    }
+}
+
+.right{
+    z-index: 1;
+    box-shadow:  3px 1px 10px #707070;
+}
+
+.icon{
+    width: 60px;
+    height: 60px;
+}
+
+.recommended{
+    background-color: #7B9BE4;
+    margin-top: 70%;
+
+    span{
+        color: white;
+        font-family: Open Sans;
+        width: 100%;
+        margin: 2%;
+        margin-top: 5%;
+    }
+
+    font{
+        color: green;
+    }
+
+    img{
+        width: 240px;
+        height: 240px;
+        border-radius: 45px;
+        margin-left: 20px;
+        margin-top: 2.5%;
+    }
+}
+
+.social-media{
+    margin-top: 40%;
+    background-color: #7B9BE4;
+
+    span{
+        color: white;
+        font-family: Open Sans;
+        width: 100%;
+    }
+
+    .img-container{
+        margin-top: 5%;
+
+        .icon{
+            margin: 4px;
+            border-radius: 10px;
+
+            z-index: 1;
+            box-shadow:  2px 1px 5px #707070;
+        }
+    }
+}
+
+.footer{
+    margin-top: 50%;
+    background-color: #7B9BE4;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+
+    a{
+        color: white;
+        font-family: Open Sans;
+        font-size: 16px;
+        text-decoration: none;
+        margin: 10%;
+        transition-property: color, text-decoration;
+        transition-duration: 0.3s;
+
+        &:hover{
+            color: #0000EE;
+            text-decoration: underline;
+        }
+    }
+}
+
+.login{
+    background-color: #7B9BE4;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+
+    a{
+        color: white;
+        font-family: Open Sans;
+        font-size: 16px;
+        text-decoration: none;
+        margin: 11%;
+        padding: 10px;
+        border-radius: 10px;
+        transition-property: color, background-color;
+        transition-duration: 0.5s;
+
+        &:hover{
+            background-color: #967DE5;
+        }
+    }
+}
+
+.is-logged{
+    margin-top: 85%;
+}
+
+.login-Popup{
+    position: fixed;
+    top: 30%;
+    left: 30%;
+
+    width: 650px;
+    height: 430px;
+    
+    background-color: #527BD8;
+}
+
+.login-btn{
+    height: 80px;
+    width: 323px;
+    margin: none;
+    padding: none;
+    border: none;
+    background-color: #967DE5;
+    color: white;
+    font-family: Open Sans;
+    font-size: 30px;
+    text-align: center;
+    z-index: -1;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.signup-btn{
+    height: 80px;
+    width: 323px;
+    margin: none;
+    padding: none;
+    border: none;
+    background-color: #967DE5;
+    color: white;
+    font-family: Open Sans;
+    font-size: 30px;
+    text-align: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.close-button{
+    margin: -3%;
+    height: 25px;
+    width: 25px;
+    font-size: 17px;
+    z-index: 100;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 22px;
+    color: white;
+    background-color: #425F7F;
+    float: right;
+    border: 1px solid white;
+    border-radius: 50%;
+    z-index: 1;
+    transition-property: color, background-color, border;
+    transition-duration: 0.5s;
+
+    &:hover{
+        background-color: white;
+        border: 2px solid #425F7F;
+        color: #425F7F;
+    }
+}
+
+.active-btn{
+    background-color: #527BD8;
+}
+
+.login-form{
+    font-family: Open Sans;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding: 10px;
+
+    input{
+        border: none;
+        border-radius: 14px;
+        height: 20px;
+        font-size: 18px;
+    }
+}
+
+.inputs{
+    background-color: #7B9BE4; 
+    margin: 0;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+}
+
+.std-button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #967DE5;
+    text-align: center;
+    color: white;
+    margin-left: 5%;
+    margin: 2%;
+    font-size: 14px;
+
+    transition-property: background-color, color, border;
+    transition-duration: 0.5s;
+
+    &:hover{
+        background-color: white;
+        color: #967DE5;
+        border-color: #967DE5;
+        cursor: pointer;
+    }
+}
+
+.pw-forgot{
+    a{
+        color: rgb(200, 200, 200);
+        text-decoration: none;
+        transition-property: color, text-decoration;
+        transition-duration: 0.2s;
+
+        &:hover{
+            color: rgb(0, 0, 238);
+            text-decoration: underline;
+        }
+    }
+}
+
+.no-acc{
+    margin-left: 5%;
+    width: 90%;
+    font-family: 'Kodchasan', sans-serif;
+    color: white;
+
+    h1{
+        font-size: 24px;
+        font-family: 'Merriweather', serif;
+    }
+}
+
+.signUp-Popup{
+    position: fixed;
+    top: 30%;
+    left: 30%;
+
+    width: 650px;
+    height: 430px;
+    
+    background-color: #527BD8;
+}
+
+.signup-form{
+    font-family: Open Sans;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    padding: 10px;
+
+    input{
+        border: none;
+        border-radius: 14px;
+        height: 20px;
+        font-size: 18px;
+    }
+}
+
+.switchtoLogin{
+    margin-top: -25%;
+    margin-left: 60%;
+    width: 30%;
+
+    font-family: 'Kodchasan', sans-serif;
+    color: white;
 }
