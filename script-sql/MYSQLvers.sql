@@ -3,33 +3,33 @@ CREATE DATABASE Hotel;
 USE Hotel;
 
 CREATE TABLE Hotel(
-HotelNr INT NOT NULL,
+HotelNr INT NOT NULL IDENTITY(1,1),
 Hotel CHAR(20),
 PRIMARY KEY (HotelNr)
 );
 
 CREATE TABLE Art(
-ArtNr INT NOT NULL,
+ArtNr INT NOT NULL IDENTITY(1,1),
 Art CHAR,
 PRIMARY KEY (ArtNr)
 );
 
 CREATE TABLE Kategorie(
-KategorieNr INT,
+KategorieNr INT IDENTITY(1,1),
 Kategorie CHAR,
 Preis INT,
 PRIMARY KEY (KategorieNr)
 );
 
 CREATE TABLE Kunde(
-KundenNr INT,
+KundenNr INT IDENTITY(1,1),
 Vorname CHAR,
 Nachname CHAR,
 PRIMARY KEY (KundenNr)
 );
 
 CREATE TABLE Mitarbeiter(
-MitarbeiterNr INT,
+MitarbeiterNr INT IDENTITY (1,1),
 Vorname CHAR,
 Nachname CHAR,
 PRIMARY KEY (MitarbeiterNr)
@@ -37,7 +37,7 @@ PRIMARY KEY (MitarbeiterNr)
 
 
 CREATE TABLE Zimmer(
-ZimmerNr INT,
+ZimmerNr INT IDENTITY(1,1),
 HotelNr INT,
 KategorieNr INT,
 Zimmer_Beschreibung CHAR,
@@ -47,7 +47,7 @@ FOREIGN KEY (KategorieNr) REFERENCES Kategorie(KategorieNr)
 );
 
 CREATE TABLE Buchung(
-BuchungNr INT,
+BuchungNr INT IDENTITY(1,1),
 KundenNr INT,
 MitarbeiterNr INT,
 PRIMARY KEY (BuchungNr),
@@ -55,12 +55,12 @@ FOREIGN KEY (KundenNr) REFERENCES Kunde(KundenNr),
 FOREIGN KEY (MitarbeiterNr) REFERENCES Mitarbeiter(MitarbeiterNr)
 );
 
-CREATE TABLE Posietion(
-PositionNr INT,
+CREATE TABLE Position(
+PositionNr INT IDENTITY(1,1),
 BuchungNr INT,
 ZimmerNr INT,
-Anreise INT,
-Abreise INT,
+Anreise DATETIME,
+Abreise DATETIME,
 PRIMARY KEY (PositionNr),
 FOREIGN KEY (BuchungNr) REFERENCES Buchung(BuchungNr),
 FOREIGN KEY (ZimmerNr) REFERENCES Zimmer(ZimmerNr)
