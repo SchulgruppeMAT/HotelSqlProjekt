@@ -2,19 +2,7 @@ $(function () {
     
     signUpLogInPopup = signUpLogInPopup;
 
-        const $body = $('body');
-        
-        // bxslider Options
-        $('.slider').bxSlider({
-            slideWidth: 1600,
-            slideHeight: 200,
-            minSlides: 1,
-            slideMargin: 0,
-            controls: false,
-            auto: true,
-            pause: 3500,
-            pager: false
-        });        
+        const $body = $('body');       
     
         //Login Sign up Popup
         $body.find('div .openLogin').each(function() {
@@ -49,9 +37,17 @@ $(function () {
         //global Closing Button
         $body.find('div .close-button').each(function(){
             let $closeBtn = $(this);
-            $closeBtn.on('click', function(){
+            $closeBtn.on('click', function() {
                 $closeBtn = $(this);
                 signUpLogInPopup.closingBtn($closeBtn);
             });
-        });   
+        });
+        
+        $body.find('.booking-btn').each(function(){
+            let $bookingButton = $(this);
+            $bookingButton.on('click', function (){
+                const $parentID = $bookingButton.parent().parent().attr('id');
+                $body.find('.bookingPopup[id="' + $parentID + '-bookingPopup"]').removeClass('is-hidden');
+            });
+        });
     });
