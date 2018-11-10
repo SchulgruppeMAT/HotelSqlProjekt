@@ -1,14 +1,26 @@
---wird noch bearbeitet
+--fertiges Procedure zum berechnen des Tages ob er frei ist
+USE Hotel;
 
-CREATE PROCEDURE
-FreeRooms @thisday DATE
-AS
-SELECT Hotel, COUNT(ZimmerNr) AS Freizimmer
+CREATE DEFINER=`root`@`localhost` 
+PROCEDURE `HowManyFreeRooms`(IN `thisday` DATETIME) 
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
+ SELECT COUNT(*) AS Anzahl_Freier_Zimmer 
+ FROM Hotel 
+ INNER JOIN Zimmer ON Hotel.HotelNr = Zimmer.ZimmerNr 
+ INNER JOIN Posietion ON Zimmer.ZimmerNr = Posietion.PosietionNr 
+ WHERE thisday NOT BETWEEN Posietion.Anreise AND Posietion.Abreise
+ GROUP BY Hotel
+
 
 --wird noch bearbeitet
 
 GO
+/*
+CREATE PROCEDURE
+FreeRooms @anreise
 
+GO
+*/
 CREATE PROCEDURE
 YourBooking @buchungsNr INT, @kundenNr int
 AS
