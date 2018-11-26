@@ -16,12 +16,10 @@ try
         // crypting the Password
         $cryptedPW = password_hash($inp_password, PASSWORD_DEFAULT);
         if($inp_password == $inp_passwordC)
-        {
-            // prepare stmt for the sql query
-            $stmt = $connection->prepare("INSERT INTO logindata (username,passwort,fullname,email)
-             VALUES ('$inp_username','$cryptedPW','$inp_fullname','$inp_email')");
-            // run that shit
-            $stmt->execute();
+        {                        
+                // prepare stmt for the sql query                
+                $stmt = $connection->prepare("CALL Register('$inp_username','$cryptedPW','$inp_fullname','$inp_email')");              
+                $stmt->execute();                            
         }
         else
         {

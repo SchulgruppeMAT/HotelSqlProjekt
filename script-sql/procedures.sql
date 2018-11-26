@@ -14,27 +14,16 @@ NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
 
 --wird noch bearbeitet
 
-GO
-/*
-CREATE PROCEDURE
-FreeRooms @anreise
+CREATE PROCEDURE `Register`
+(IN `username` VARCHAR(30), IN `passwort` VARCHAR(255), IN `fullname` VARCHAR(30), IN `email` VARCHAR(255)) 
+NOT DETERMINISTIC MODIFIES SQL DATA SQL SECURITY DEFINER 
+INSERT INTO `logindata` 
+(username,passwort,fullname,email) 
+VALUES 
+(`username`, `passwort`,`fullname`,`email`)
 
-GO
-*/
-CREATE PROCEDURE
-YourBooking @buchungsNr INT, @kundenNr int
-AS
-SELECT * FROM Position WHERE BuchungsNr = @buchungsNr AND KundenNr = @KundenNr
 
-GO
-/*
-CREATE PROCEDURE
-AllBookings @kundenNr int
-AS
-SELECT  FROM Buchung WHERE 
-*/
-
-CREATE PROCEDURE
+/*CREATE PROCEDURE
 AllRooms
 AS
 SELECT Hotel, COUNT(ZimmerNr) AS Zimmeranzahl
@@ -50,4 +39,4 @@ AS
 SELECT Hotel, COUNT(MitarbeiterNr) AS Mitarbeiteranzahl
 FROM Hotel INNER JOIN Mitarbeiter
 ON Hotel.HotelNr = Hotel.Mitarbeiter
-GROUP BY Hotel
+GROUP BY Hotel*/
