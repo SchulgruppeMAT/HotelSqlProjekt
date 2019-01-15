@@ -20,7 +20,18 @@
             if(password_verify($inp_password, $db_passw))
             {
                 // TODO ref link and session.start();
-                echo "<script>alert('Angemeldet');</script>";
+                //echo "<script>alert('Angemeldet');</script>";
+                //session_start();
+                if ($inp_username=='admin'&&$db_passw=='$2y$10$71wW7CM7wqawoJnB9hCy5uK1RMXXSNgaXtzSMdt5IXfXbsHXN2qQ2')
+                {
+                    $_SESSION['user']=$inp_username;
+                    header("Refresh:0");
+                }
+                else
+                {
+                    $_SESSION['user']=$inp_username;
+                    header("Refresh:0");
+                } 
             }
             else
             {
