@@ -43,11 +43,12 @@ $(function () {
             });
         });
         
-        $body.find('.booking-btn').each(function(){
+        $body.find('.bookingPopup').each(function(){
             let $bookingButton = $(this);
             $bookingButton.on('click', function (){
-                const $parentID = $bookingButton.parent().parent().attr('id');
+                const $parentID = $bookingButton.parent().attr('id');
+                console.log('jo');
                 $body.find('.bookingPopup[id="' + $parentID + '-bookingPopup"]').removeClass('is-hidden');
             });
         });
-    });
+});
