@@ -25,7 +25,9 @@ CREATE TABLE Kunde(
 KundenNr INT AUTO_INCREMENT,
 Vorname CHAR(30),
 Nachname CHAR(30),
+username CHAR(30),
 PRIMARY KEY (KundenNr)
+FOREIGN KEY (username) REFERENCES LoginData(username)
 );
 
 CREATE TABLE Mitarbeiter(

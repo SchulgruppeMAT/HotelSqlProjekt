@@ -2,12 +2,14 @@
 <html lang="en">
 <?php
     session_start();
-    if(isset($_SESSION['user']))
+    if(isset($_SESSION['user']) )
     {
         try
         {
             $user = $_SESSION['user'];
+            $CustomerID = $_SESSION['CustID'];
             echo"<script>console.log('$user');</script>";
+            echo"<script>console.log('$CustomerID');</script>";
             //session_destroy();
         }
         catch(Exception $e)
