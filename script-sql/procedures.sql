@@ -17,55 +17,61 @@ CREATE DEFINER=`root`@`localhost`
 PROCEDURE `NewBookings`
 --wird noch bearbeitet
 
+<<<<<<< HEAD
 GO
--- shows bookings for the sopecific KundenNr
-CREATE DEFINER=`root`@`localhost` 
-PROCEDURE `YourBookings`(IN `kundenNr` INT(255))
- NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER 
- SELECT buchung.BuchungNr, buchung.KundenNr, zimmer.ZimmerNr, Hotel.Hotel, posietion.Anreise, posietion.Abreise, kategorie.Kategorie 
- FROM Zimmer 
- INNER JOIN posietion ON Zimmer.ZimmerNr = posietion.ZimmerNr 
- INNER JOIN Hotel ON zimmer.ZimmerNr = hotel.HotelNr 
- INNER JOIN Buchung ON posietion.BuchungNr = buchung.BuchungNr  
- INNER JOIN kategorie ON zimmer.KategorieNr = kategorie.KategorieNr 
- WHERE Buchung.KundenNr = kundenNr
+/*
+CREATE PROCEDURE
+FreeRooms @anreise
 
+GO
+*/
+CREATE DEFINER = `root`@`localhost`
+PROCEDURE `YourBookings`(IN 'buchungsNr' INT)
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
+SELECT * FROM Position WHERE BuchungsNr = buchungsNr AND KundenNr = kundenNr
 
 CREATE PROCEDURE
 YourBooking @buchungsNr INT, @kundenNr int
 AS
-SELECT buchung.BuchungNr, buchung.KundenNr, zimmer.ZimmerNr, Hotel.Hotel, posietion.Anreise, posietion.Abreise, kategorie.Kategorie
-  FROM Zimmer
-  INNER JOIN posietion ON Zimmer.ZimmerNr = posietion.ZimmerNr 
-  INNER JOIN Hotel ON zimmer.ZimmerNr = hotel.HotelNr 
-  INNER JOIN Buchung ON posietion.BuchungNr = buchung.BuchungNr  
-  INNER JOIN kategorie ON zimmer.KategorieNr = kategorie.KategorieNr 
-  WHERE Buchung.KundenNr = kundenNr
+SELECT * FROM Position WHERE BuchungsNr = @buchungsNr AND KundenNr = @KundenNr
+=======
+CREATE PROCEDURE `Register`
+(IN `username` VARCHAR(30), IN `passwort` VARCHAR(255), IN `fullname` VARCHAR(30), IN `email` VARCHAR(255)) 
+NOT DETERMINISTIC MODIFIES SQL DATA SQL SECURITY DEFINER 
+INSERT INTO `logindata` 
+(username,passwort,fullname,email) 
+VALUES 
+(`username`, `passwort`,`fullname`,`email`)
+>>>>>>> 44e91e2ed4eb3d0021c5630c4a41d900b0ea0e00
 
---
--- shows all rooms
+
+<<<<<<< HEAD
 CREATE DEFINER = `root`@`localhost`
-PROCEDURE `AllRooms`()
+PROCEDURE `AllRooms`
 NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
-SELECT COUNT(*) AS Zimmeranzahl
-FROM Hotel INNER JOIN Zimmer ON Hotel.HotelNr = Zimmer.HotelNr
-
+SELECT Hotel, COUNT(Zimmer) AS Zimmeranzahl
+FROM Hotel INNER JOIN ZimmerON Hotel.HotelNr = Hotel.ZimmerNr
 --
 CREATE PROCEDURE
+=======
+/*CREATE PROCEDURE
+>>>>>>> 44e91e2ed4eb3d0021c5630c4a41d900b0ea0e00
 AllRooms
 AS
 SELECT Hotel, COUNT(ZimmerNr) AS Zimmeranzahl
 FROM Hotel INNER JOIN Zimmer 
 ON Hotel.HotelNr = Hotel.ZimmerNr
-
+GROUP BY Hotel
 --
+GO
 
--- shows all workers
-CREATE DEFINER=`root`@`localhost`
-PROCEDURE `AllWorker`()
-NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER 
-SELECT mitarbeiter.Vorname, mitarbeiter.Nachname
-FROM Mitarbeiter
+CREATE DEFINER = `root`@`localhost`
+PROCEDURE `AllWorker`
+NOT DETERMINISTC NO SQL SQL SECURITY DEFINER
+SELECT Hotel, COUNT(MitarbeiterNr) AS Mitarbeiteranzahl
+FROM Hotel INNER JOIN Mitarbeiter
+ON Hotel.HotelNr = Hotel.Mitarbeiter
+GROUP BY Hotel
 
 --
 CREATE PROCEDURE
@@ -74,5 +80,9 @@ AS
 SELECT Hotel, COUNT(MitarbeiterNr) AS Mitarbeiteranzahl
 FROM Hotel INNER JOIN Mitarbeiter
 ON Hotel.HotelNr = Hotel.Mitarbeiter
+<<<<<<< HEAD
 GROUP BY Hotel
 --
+=======
+GROUP BY Hotel*/
+>>>>>>> 44e91e2ed4eb3d0021c5630c4a41d900b0ea0e00
