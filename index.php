@@ -90,7 +90,7 @@
                     <p>
                         <label>Vollername<br><input type="text" name="txt_fullname"></label><br>
                         <label>e-mail<br><input type="email" name="txt_email"></label><br>
-    
+                        <label>Username<br><input type="text" name="txt_username"></label><br>
                         <label>Passwort<br><input type="password" name="txt_pw"></label><br>
                         <label>Passwort Bestätigen<br><input type="password" name="txt_pwC"></label><br>
                         <br>
