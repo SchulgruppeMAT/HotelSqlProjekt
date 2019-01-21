@@ -74,9 +74,5 @@ AS
 SELECT Hotel, COUNT(MitarbeiterNr) AS Mitarbeiteranzahl
 FROM Hotel INNER JOIN Mitarbeiter
 ON Hotel.HotelNr = Hotel.Mitarbeiter
-<<<<<<< HEAD
 GROUP BY Hotel
---
-=======
-GROUP BY Hotel*/
->>>>>>> 44e91e2ed4eb3d0021c5630c4a41d900b0ea0e00
+---
