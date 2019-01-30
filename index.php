@@ -9,11 +9,9 @@
             $user = $_SESSION['user'];
             $CustomerID = $_SESSION['CustID'];
             echo"<script>console.log('$user');</script>";
-<<<<<<< HEAD
-            echo"<scrpit src="'script-javascript/navChange.js'"></scrpit>";
-=======
+            echo"<scrpit src="+'script-javascript/navChange.js'+"></scrpit>";
+
             echo"<script>console.log('$CustomerID');</script>";
->>>>>>> 70f6eeb1f59388a49d803067b7a439fd4ef5fd94
             //session_destroy();
         }
         catch(Exception $e)
