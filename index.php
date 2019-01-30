@@ -8,6 +8,7 @@
         {
             $user = $_SESSION['user'];
             echo"<script>console.log('$user');</script>";
+            echo"<scrpit src="'script-javascript/navChange.js'"></scrpit>";
             //session_destroy();
         }
         catch(Exception $e)
@@ -112,11 +113,11 @@
 
         <nav class="is-logged">
             <ul>
-                <li class="is-hidden" id="profil"><a href="#">Profil</a></li>
+                <li class="is-hidden logged-user" id="profil"><a href="#">Profil</a></li>
                 <li><a href="#">Unser Hotel</a></li>
                 <li><a href="#">Unsere Angebote</a></li>
-                <li class="is-hidden" id="bookings"><a href="#">Buchungen</a></li>
-                <li class="is-hidden"><a href="#" id="logout">Logout</a></li>
+                <li class="is-hidden logged-user" id="bookings"><a href="#">Buchungen</a></li>
+                <li class="is-hidden logged-user"><a href="#" id="logout">Logout</a></li>
             </ul>
         </nav>
 
