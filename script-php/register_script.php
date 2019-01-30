@@ -23,7 +23,7 @@ try
                 // prepare stmt for the sql query                
                 $stmt = $connection->prepare("CALL Register('$inp_username','$cryptedPW','$inp_email')");  
                 $stmt->execute();
-                $stmt2 = $connection->prepare("CALL AddCustomer('$inp_forename','$inp_surname')");     
+                $stmt2 = $connection->prepare("CALL AddCustomer('$inp_forename','$inp_surname', '$inp_username')");     
                 $stmt2->execute();                                                                         
         }
         else

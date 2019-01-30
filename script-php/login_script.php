@@ -23,10 +23,7 @@
             $db_passw = $row['passwort'];   // the output from the hash defined in the array
 
             if(password_verify($inp_password, $db_passw))
-            {
-                // TODO ref link and session.start();
-                //echo "<script>alert('Angemeldet');</script>";
-                //session_start();
+            {                
                 if ($inp_username=='admin'&&$db_passw=='$2y$10$71wW7CM7wqawoJnB9hCy5uK1RMXXSNgaXtzSMdt5IXfXbsHXN2qQ2')
                 {
                     $_SESSION['user']=$inp_username;
@@ -34,7 +31,13 @@
                 }
                 else
                 {
+                    $stmt1 = $connection->prepare("CALL getCustID('$inp_username')");  
+                    $stmt1->execute();          
+                    while ($row = $stmt1->fetch()) {
+                      $CustomID = $row['KundenNr'];                    
+                  }                                                              
                     $_SESSION['user']=$inp_username;
+                    $_SESSION['CustID']=$CustomID;                  
                     header("Refresh:0");
                 } 
             }
