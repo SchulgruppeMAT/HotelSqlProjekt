@@ -51,10 +51,4 @@ $(function () {
                 $body.find('.bookingPopup[id="' + $parentID + '-bookingPopup"]').removeClass('is-hidden');
             });
         });
-
-        $body.find('.logged-user'.each(function(){
-            let $loggedUsr = (this);
-            console.log($loggedUsr);
-            $loggedUsr.removeClass('.is-hidden');
-        }));
 });
