@@ -65,3 +65,12 @@ CREATE DEFINER=`root`@`localhost`
 PROCEDURE `InsertBuchung`(IN `kundenNr` INT(255), IN `mitarbeiterNr` INT(255)) 
 NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER 
 INSERT INTO Buchung (KundenNr, MitarbeiterNr) VALUES (kundenNr, mitarbeiterNr);
+
+CREATE DEFINER=`root`@`localhost`
+PROCEDURE `ChangePassword`(IN `Changepassword` VARCHAR(255), IN `user` VARCHAR(30))
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
+UPDATE LoginData SET passwort = Changepassword WHERE username = user;
+
+CREATE DEFINER=`root`@`localhost`
+PROCEDURE `ChangeUsername` (IN `NewUsername` VARCHAR(30), IN `user` VARCHAR(30))
+UPDATE logindata, kunde SET logindata.username = NewUsername, kunde.username = NewUsername WHERE username = user;
