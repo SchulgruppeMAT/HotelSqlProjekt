@@ -70,3 +70,12 @@ CREATE DEFINER=`root`@`localhost`
 PROCEDURE `DeleteLoginData` (IN `usern` VARCHAR(30))
 NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
 DELETE IGNORE FROM logindata WHERE username = usern;
+
+CREATE DEFINE=`root`@`localhost`
+PROCEDURE `InsertEinzelzimmerBuchung` ()
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
+
+CREATE DEFINER=`root`@`localhost` 
+PROCEDURE `getCustID`(IN `username` VARCHAR(30)) 
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER 
+SELECT kunde.KundenNr FROM kunde WHERE kunde.username = username;
