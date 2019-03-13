@@ -2,23 +2,6 @@
 <html lang="en">
 <?php
     session_start();
-    if(isset($_SESSION['user']) )
-    {
-        try
-        {
-            $user = $_SESSION['user'];
-            $CustomerID = $_SESSION['CustID'];
-            echo"<script>console.log('$user');</script>";
-            echo"<scrpit src="+'script-javascript/navChange.js'+"></scrpit>";
-
-            echo"<script>console.log('$CustomerID');</script>";
-            //session_destroy();
-        }
-        catch(Exception $e)
-        {
-            echo"<script>console.log('$e');</script>";
-        }
-    }
 ?>
 <head>
     <meta charset="UTF-8">
@@ -113,18 +96,23 @@
         <?php
             include("script-php/register_script.php");
         ?>
-
+        
         <nav class="is-logged">
             <ul>
                 <li class="is-hidden logged-user" id="profil"><a href="#">Profil</a></li>
                 <li><a href="#">Unser Hotel</a></li>
                 <li><a href="#">Unsere Angebote</a></li>
                 <li class="is-hidden logged-user" id="bookings"><a href="#">Buchungen</a></li>
-                <li class="is-hidden logged-user"><a href="#" id="logout">Logout</a></li>
+                <li class="is-hidden logged-user" id="logout"><a href="index.php?DoLogout" >Logout</a></li>
             </ul>
         </nav>
 
+        <?php
+          include("script-php/logout_script.php");          
+        ?>
+
     </aside>
+
 
     <main>
         <header>
@@ -247,4 +235,23 @@
     <script src="script-javascript/signUpLogInPopup.js"></script>
 </body>
 
+<?php
+if(isset($_SESSION['user']) )
+{
+    try
+    {
+        $user = $_SESSION['user'];
+        $CustomerID = $_SESSION['CustID'];
+        echo"<script>console.log('$user');</script>";
+        echo"<script src='script-javascript/navChange.js'></script>";
+
+        echo"<script>console.log('$CustomerID');</script>";
+        //session_destroy();
+    }
+    catch(Exception $e)
+    {
+        echo"<script>console.log('$e');</script>";
+    }
+}
+?>
 </html>

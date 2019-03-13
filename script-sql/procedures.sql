@@ -8,13 +8,6 @@ NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
  WHERE thisday NOT BETWEEN Posietion.Anreise AND Posietion.Abreise
  GROUP BY Hotel;
 
-
-CREATE DEFINER=`root`@`localhost`
-PROCEDURE `NewBookings`(IN `kundenNr` INT(255), IN `mitarbeiterNr` INT(255), IN `zimmerNr` INT(255), IN `dateIn` DATETIME, IN `dateOut` DATETIME)
-NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
-INSERT INTO buchung (KundenNr, MitarbeiterNr) VALUES (kundenNr, mitarbeiterNr);
-INSERT INTO posietion (BuchungNr, ZimmerNr, Anreise, Abreise) VALUES (LAST_INSERT_ID(), zimmerNr, dateIn, dateOut);
-
 CREATE DEFINER=`root`@`localhost` 
 PROCEDURE `YourBookings`(IN `kundenNr` INT(255))
  NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER 
@@ -38,16 +31,8 @@ NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
 SELECT mitarbeiter.Vorname, mitarbeiter.Nachname
 FROM Mitarbeiter;
 
-CREATE PROCEDURE
-AllWorker
-AS
-SELECT Hotel, COUNT(MitarbeiterNr) AS Mitarbeiteranzahl
-FROM Hotel INNER JOIN Mitarbeiter
-ON Hotel.HotelNr = Hotel.Mitarbeiter
-GROUP BY Hotel;
-
 CREATE DEFINER=`root`@`localhost`
-PROCEDURE `InsertLoginData`(IN `username` VARCHAR(30), IN `passwort` VARCHAR(255), IN `email` VARCHAR(255), IN `vorname` CHAR(30), IN `nachname` CHAR(30), IN `usern` CHAR(30))
+PROCEDURE `InsertLoginData`(IN `username` VARCHAR(30), IN `passwort` VARCHAR(255), IN `email` VARCHAR(255))     /*WORKS*/
 NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
 INSERT INTO logindata (username, passwort, email) VALUES (username, passwort, email);
 
@@ -73,4 +58,15 @@ UPDATE LoginData SET passwort = Changepassword WHERE username = user;
 
 CREATE DEFINER=`root`@`localhost`
 PROCEDURE `ChangeUsername` (IN `NewUsername` VARCHAR(30), IN `user` VARCHAR(30))
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
 UPDATE logindata, kunde SET logindata.username = NewUsername, kunde.username = NewUsername WHERE username = user;
+
+CREATE DEFINER=`root`@`localhost`
+PROCEDURE `DeleteKunde` (IN `usern` VARCHAR(30))
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
+DELETE IGNORE FROM kunde WHERE kunde.username = usern;
+
+CREATE DEFINER=`root`@`localhost`
+PROCEDURE `DeleteLoginData` (IN `usern` VARCHAR(30))
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
+DELETE IGNORE FROM logindata WHERE username = usern;

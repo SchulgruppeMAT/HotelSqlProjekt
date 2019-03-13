@@ -21,9 +21,9 @@ try
         if($inp_password == $inp_passwordC)
         {                                  
                 // prepare stmt for the sql query                
-                $stmt = $connection->prepare("CALL Register('$inp_username','$cryptedPW','$inp_email')");  
+                $stmt = $connection->prepare("CALL InsertLoginData('$inp_username','$cryptedPW','$inp_email')");  
                 $stmt->execute();
-                $stmt2 = $connection->prepare("CALL AddCustomer('$inp_forename','$inp_surname', '$inp_username')");     
+                $stmt2 = $connection->prepare("CALL InsertKundenData('$inp_forename','$inp_surname', '$inp_username')");     
                 $stmt2->execute();                                                                         
         }
         else
