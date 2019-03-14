@@ -170,7 +170,7 @@
                 <div id="2-bookingPopup" class="bookingPopup is-hidden">
                 <button class="close-button">X</button>
                 2
-            </div>
+                </div>
 
                 <section>
                     <h1>Familienzimmer</h1>
@@ -186,7 +186,7 @@
                 <div id="2-bookingPopup" class="bookingPopup is-hidden">
                 <button class="close-button">X</button>
                 2
-            </div>
+                </div>
 
                 <section>
                     <h1>Appartment</h1>
@@ -202,7 +202,7 @@
                 <div id="2-bookingPopup" class="bookingPopup is-hidden">
                 <button class="close-button">X</button>
                 2
-            </div>
+                </div>
 
             </div>
 

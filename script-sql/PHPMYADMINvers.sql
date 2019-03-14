@@ -21,12 +21,19 @@ Preis INT(20),
 PRIMARY KEY (KategorieNr)
 );
 
+CREATE TABLE LoginData(
+    username VARCHAR(30) not null,
+    passwort VARCHAR(255) not null,
+    email VARCHAR(255) not null,
+    PRIMARY KEY (username)
+);
+
 CREATE TABLE Kunde(
 KundenNr INT AUTO_INCREMENT,
 Vorname CHAR(30),
 Nachname CHAR(30),
 username CHAR(30),
-PRIMARY KEY (KundenNr)
+PRIMARY KEY (KundenNr),
 FOREIGN KEY (username) REFERENCES LoginData(username)
 );
 
@@ -66,11 +73,4 @@ Abreise DATETIME,
 PRIMARY KEY (PosietionNr),
 FOREIGN KEY (BuchungNr) REFERENCES Buchung(BuchungNr),
 FOREIGN KEY (ZimmerNr) REFERENCES Zimmer(ZimmerNr)
-);
-
-CREATE TABLE LoginData(
-    username VARCHAR(30) not null,
-    passwort VARCHAR(255) not null,
-    email VARCHAR(255) not null,
-    PRIMARY KEY (username)
 );
