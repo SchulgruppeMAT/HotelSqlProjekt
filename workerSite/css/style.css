@@ -1,0 +1,49 @@
+body{
+    background-color: #527BD8;
+}
+
+main{
+    background-color: #7B9BE4;
+    width: 25%;
+    height: 30%;
+    font-family: Open Sans;
+    padding: 2%;
+    margin-top: 20%;
+    margin-left: 35%;
+}
+main h1{
+    color: white;
+    font-size: 45xp;
+}
+
+main label{
+    color: white;
+    font-size: 30px;
+}
+
+main input{
+    width: 300px;
+    height: 30px;
+    font-size: 24px;
+    font-family: Open Sans;
+    margin-top: 2.5%;
+}
+
+main button{
+    width: 250px;
+    height: 60px;
+    background-color: #967DE5;
+    border: none;
+    color: white;
+    font-family: Open Sans;
+    font-size: 25px;
+    border-radius: 15px;
+    margin-top: 2%;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+
+main button:hover{
+    background-color: #6D55B8;
+
+}
