@@ -21,8 +21,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/backend.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    
+    <header>
+        <h1>Tropical Garda Hotel Backend</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="?page=Userlist">Userlist</a></li>
+            <li><a href="?page=Bookinglist">Bookinglist</a></li>
+            <li><a href="?page=Stonierlist">Stonierlist</a></li>
+            <li><a href="?page=Zimmerverwaltung">Zimmerverwaltung</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <?php
+        switch($_GET['page']){
+            case "Zimmerverwaltung":
+                echo "Zimmerverwaltung";
+                break;
+            case "Bookinglist":
+                echo "Bookinglist";
+                break;
+            case "Stonierlist":
+                echo "Stonierlist";
+                break;
+            case "Userlist": 
+                echo "Userlist";
+                break;
+            default:
+                echo "Userlist";
+                break;
+        }
+        ?>
+    </main>
 </body>
 </html>

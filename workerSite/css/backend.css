@@ -1,0 +1,49 @@
+body{
+    background-color: #527BD8;
+    color: white;
+    font-family: Open Sans;
+}
+
+header{
+    background-color: #7B9BE4;
+    padding: 5px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
+header h1{
+    margin-left: 2.5%;
+}
+
+nav{
+    background-color: #7B9BE4;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1.5%;
+    padding: 5px;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    transition-property: background-color;
+    transition-duration: .2s;
+}
+nav a:hover{
+    background-color: rgba(150, 125, 229, 0.7);
+}
+
+main{
+    background-color: #7B9BE4;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 1.5%;
+    padding: 5px;
+}
