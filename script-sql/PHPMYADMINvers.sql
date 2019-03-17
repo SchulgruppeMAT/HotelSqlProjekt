@@ -22,6 +22,7 @@ PRIMARY KEY (KategorieNr)
 );
 
 CREATE TABLE LoginData(
+    id INT(255) AUTO_INCREMENT UNIQUE,
     username VARCHAR(30) not null,
     passwort VARCHAR(255) not null,
     email VARCHAR(255) not null,

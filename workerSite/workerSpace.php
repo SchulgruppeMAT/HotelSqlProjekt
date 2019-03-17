@@ -8,7 +8,6 @@
         {
             $user = $_SESSION['username'];
             echo"<script>console.log('$user');</script>";
-            //session_destroy();
         }
         catch(Exception $e)
         {
@@ -35,28 +34,29 @@
             <li><a href="?page=Bookinglist">Bookinglist</a></li>
             <li><a href="?page=Stonierlist">Stonierlist</a></li>
             <li><a href="?page=Zimmerverwaltung">Zimmerverwaltung</a></li>
+            <li><a href="?page=Logout">Logout</a></li>
         </ul>
     </nav>
 
     <main>
         <?php
-        switch($_GET['page']){
-            case "Zimmerverwaltung":
-                echo "Zimmerverwaltung";
-                break;
-            case "Bookinglist":
-                echo "Bookinglist";
-                break;
-            case "Stonierlist":
-                echo "Stonierlist";
-                break;
-            case "Userlist": 
-                echo "Userlist";
-                break;
-            default:
-                echo "Userlist";
-                break;
-        }
+            switch($_GET['page']){
+                case "Zimmerverwaltung":
+                    echo "Zimmerverwaltung";
+                    break;
+                case "Bookinglist":
+                    echo "Bookinglist";
+                    break;
+                case "Stonierlist":
+                    echo "Stonierlist";
+                    break;
+                case "Userlist": 
+                    include "backendSites/userlist.php";
+                    break;
+                default:
+                    echo "Userlist";
+                    break;
+            }
         ?>
     </main>
 </body>

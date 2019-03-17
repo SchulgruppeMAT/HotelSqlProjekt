@@ -68,6 +68,7 @@ FOREIGN KEY (ZimmerNr) REFERENCES Zimmer(ZimmerNr)
 
 CREATE TABLE LoginData
 (
+    id INT IDENTITY(1,1),
     username VARCHAR(30) not null,
     passwort VARCHAR(255) not null,
     fullname  VARCHAR(30) not null,

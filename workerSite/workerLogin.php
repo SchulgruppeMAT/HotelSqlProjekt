@@ -42,7 +42,7 @@
                 if($admin == trim($_POST['username']) && $admin_pw == trim($_POST['password'])){
                     $_SESSION['username']=$admin;
                     echo "<script>
-                            window.location.replace('workerSpace.php'); 
+                            window.location.replace('workerSpace.php?page=Userlist'); 
                         </script>";
                 exit();
                 } else{
