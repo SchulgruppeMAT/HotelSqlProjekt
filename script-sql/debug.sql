@@ -11,17 +11,10 @@ INSERT INTO zimmer (HotelNr, KategorieNr, Zimmer_Beschreibung) VALUES (1, 2, "B"
 INSERT INTO zimmer (HotelNr, KategorieNr, Zimmer_Beschreibung) VALUES (1, 3, "C"), (1, 3, "Mit Ausblick");
 INSERT INTO zimmer (HotelNr, KategorieNr, Zimmer_Beschreibung) VALUES (1, 4, "D"), (1, 4, "Mit Ausblick");
 
-INSERT INTO logindata (username, passwort, email) VALUES (admin, admin, admin@test.de);
-INSERT INTO logindata (username, passwort, email) VALUES (Test, test, test@test.de);
-
 
 INSERT INTO mitarbeiter (Vorname, Nachname) VALUES ('Fritz', 'Schmitz');
 INSERT INTO mitarbeiter (Vorname, Nachname) VALUES ('Sandra', 'Wagner');
 INSERT INTO mitarbeiter (Vorname, Nachname) VALUES ('Simon', 'Kohl');
-
-
-INSERT INTO kunde (Vorname, Nachname) VALUES ('Darius', 'Classen');
-INSERT INTO kunde (Vorname, Nachname) VALUES ('Moriz', 'van Ebers');
 
 
 INSERT INTO buchung (KundenNr, MitarbeiterNr) VALUES (1, 3);
