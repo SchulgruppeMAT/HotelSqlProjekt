@@ -57,9 +57,14 @@ NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
 UPDATE LoginData SET passwort = Changepassword WHERE username = user;
 
 CREATE DEFINER=`root`@`localhost`
-PROCEDURE `ChangeUsername` (IN `NewUsername` VARCHAR(30), IN `user` VARCHAR(30))
+PROCEDURE `ChangeUsernameKunde` (IN `NewUsername` VARCHAR(30), IN `usern` VARCHAR(30))
 NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
-UPDATE logindata, kunde SET logindata.username = NewUsername, kunde.username = NewUsername WHERE username = user;
+UPDATE kunde SET username = NewUsername WHERE username = usern;
+
+CREATE DEFINER=`root`@`localhost`
+PROCEDURE `ChangeUsernameLoginData` (IN `NewUsername` VARCHAR(30), IN `usern` VARCHAR(30))
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
+UPDATE logindata SET username = NewUsername WHERE username = usern;
 
 CREATE DEFINER=`root`@`localhost`
 PROCEDURE `DeleteKunde` (IN `usern` VARCHAR(30))
@@ -73,9 +78,14 @@ DELETE IGNORE FROM logindata WHERE username = usern;
 
 CREATE DEFINE=`root`@`localhost`
 PROCEDURE `InsertEinzelzimmerBuchung` ()
-NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER
+NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER;
 
 CREATE DEFINER=`root`@`localhost` 
 PROCEDURE `getCustID`(IN `username` VARCHAR(30)) 
 NOT DETERMINISTIC NO SQL SQL SECURITY DEFINER 
 SELECT kunde.KundenNr FROM kunde WHERE kunde.username = username;
+
+-- not ready
+CREATE DEFINER=`root`@`localhost` -- benutzte die InsertBuchung
+PROCEDURE `InsertEinzelzimmerPosition` (IN `buchungsNr` INT(255), IN `dayIn` DATETIME, IN `dayOut` DATETIME)
+INSERT INTO posietion (BuchungNr, ZimmerNr, Anreise, Abreise) VALUES (buchungsNr, (SELECT ZimmerNr FROM zimmer WHERE zimmer.KategorieNr = 1), dayIn, dayOut);
