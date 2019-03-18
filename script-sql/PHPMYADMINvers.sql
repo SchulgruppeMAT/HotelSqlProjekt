@@ -21,7 +21,6 @@ Preis INT(20),
 PRIMARY KEY (KategorieNr)
 );
 
-
 CREATE TABLE LoginData(
     username VARCHAR(30) not null,
     passwort VARCHAR(255) not null,
@@ -75,4 +74,3 @@ PRIMARY KEY (PosietionNr),
 FOREIGN KEY (BuchungNr) REFERENCES Buchung(BuchungNr),
 FOREIGN KEY (ZimmerNr) REFERENCES Zimmer(ZimmerNr)
 );
-

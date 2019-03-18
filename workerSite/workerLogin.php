@@ -40,12 +40,10 @@
                 $admin_pw = 123;
 
                 if($admin == trim($_POST['username']) && $admin_pw == trim($_POST['password'])){
-                    $_SESSION['username']=$inp_username;
+                    $_SESSION['username']=$admin;
                     echo "<script>
-                            alert('hurra');
                             window.location.replace('workerSpace.php'); 
-                        </script>
-                        header('workerSpace.php')";
+                        </script>";
                 exit();
                 } else{
                     echo "<script>
